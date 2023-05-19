@@ -71,7 +71,7 @@ FROM Facilities;
 /* Q6: You'd like to get the first and last name of the last member(s)
 who signed up. Try not to use the LIMIT clause for your solution. */
 SELECT firstname, surname FROM Members
-WHERE joindate = (SELECT MAX(joindate) FROM Members)
+WHERE joindate = (SELECT MAX(joindate) FROM Members);
 
 
 /* Q7: Produce a list of all members who have used a tennis court.
@@ -154,7 +154,7 @@ ORDER BY Member;
 /* note from me: starttime for bookings in %Y-%m-%d format */
 SELECT name AS facility, SUM(slots) AS member_usage FROM Bookings
 LEFT JOIN Facilities USING(facid)
-WHERE memid > 0 GROUP BY facid ORDER BY member_usage DESC
+WHERE memid > 0 GROUP BY facid ORDER BY member_usage DESC;
 
 
 /* Q13: Find the facilities usage by month, but not guests */
