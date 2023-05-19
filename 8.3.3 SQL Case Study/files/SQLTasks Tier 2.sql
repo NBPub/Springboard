@@ -34,16 +34,17 @@ exploring the data, and getting acquainted with the 3 tables. */
 /* QUESTIONS 
 /* Q1: Some of the facilities charge a fee to members, but some do not.
 Write a SQL query to produce a list of the names of the facilities that do. */
-SELECT name FROM Facilities WHERE membercost = 0;
+SELECT name FROM Facilities WHERE membercost > 0;
+
 
 /* Q2: How many facilities do not charge a fee to members? */
 SELECT COUNT(*) FROM Facilities WHERE membercost = 0;
+
 
 /* Q3: Write an SQL query to show a list of facilities that charge a fee to members,
 where the fee is less than 20% of the facility's monthly maintenance cost.
 Return the facid, facility name, member cost, and monthly maintenance of the
 facilities in question. */
-
 SELECT facid, name, membercost, monthlymaintenance
 FROM Facilities
 WHERE membercost < monthlymaintenance*0.2;
@@ -52,7 +53,7 @@ WHERE membercost < monthlymaintenance*0.2;
 /* Q4: Write an SQL query to retrieve the details of facilities with ID 1 and 5.
 Try writing the query without using the OR operator. */
 SELECT * FROM Facilities
-WHERE facid = 1 OR facid = 5;
+WHERE facid IN (1,5);
 
 
 /* Q5: Produce a list of facilities, with each labelled as
@@ -69,7 +70,7 @@ FROM Facilities;
 
 /* Q6: You'd like to get the first and last name of the last member(s)
 who signed up. Try not to use the LIMIT clause for your solution. */
-SELECT firstname, surname, joindate FROM Members
+SELECT firstname, surname FROM Members
 WHERE joindate = (SELECT MAX(joindate) FROM Members)
 
 
@@ -81,7 +82,7 @@ SELECT name,  surname || ', ' || firstname AS member
 FROM Bookings 
 LEFT JOIN Facilities USING(facid)
 LEFT JOIN Members USING(memid)
-WHERE facid <= 1
+WHERE name LIKE 'Tennis Court%'
 GROUP BY member
 ORDER BY member;
 
@@ -139,22 +140,21 @@ WHERE memid = 0 GROUP BY facid)
 USING(facid) WHERE total_revenue < 1000
 ORDER BY total_revenue;
 
+
 /* Q11: Produce a report of members and who recommended them in alphabetic surname,firstname order */
-SELECT M.surname "Surname", M.firstname "Firstname",
- R.surname || ', ' || R.firstname AS "Recommending Member"
+SELECT M.surname || ', ' || M.firstname AS "Member",
+R.surname || ', ' || R.firstname AS "Recommending Member"
 FROM Members M
 LEFT JOIN Members R on R.memid=M.recommendedby 
 WHERE M.memid > 0
-ORDER BY Surname, Firstname;
+ORDER BY Member;
+
 
 /* Q12: Find the facilities with their usage by member, but not guests */
 /* note from me: starttime for bookings in %Y-%m-%d format */
 SELECT name AS facility, SUM(slots) AS member_usage FROM Bookings
 LEFT JOIN Facilities USING(facid)
 WHERE memid > 0 GROUP BY facid ORDER BY member_usage DESC
-SELECT SUBSTRING(starttime,6,2) AS month, SUM(slots) AS member_usage 
-FROM Bookings
-WHERE memid > 0 GROUP BY month;
 
 
 /* Q13: Find the facilities usage by month, but not guests */
