@@ -10,7 +10,7 @@
 | 6 | [Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone) | *First Capstone*<br>Data Science Method (DSM) exercise, contained in external repository. Seven submissions in total. | ✔️ |
 | 7.2 | [API Mini-Project](/7.2.5%20API%20Mini-Project/api_data_wrangling_mini_project.ipynb) | Last assignment for **Data Wrangling** portion, **7.2** of the DSM | *submitted*  |
 | 7.4 | [Nasa Meteorites Report](/7.4.2%20Meteorites/meteorites.ipynb) | Notebook example showing use of [ydata-profiling](https://ydata-profiling.ydata.ai/docs/master/pages/getting_started/quickstart.html) to generate reports from `DataFrames`, part of **7.4 - Data Defintions**. Example HTML reports contained in folder. | ✔️ |
-| 8.3 | [SQL Case Study](/8.3.3%20SQL%20Case%20Study/SQL_Country_Club.ipynb) | SQL wrap up using country club facility / booking / member data. *Issues with Springboard's PHPMyAdmin server*  | *submitted* |
+| 8.3 | [SQL Case Study](/8.3.3%20SQL%20Case%20Study/SQL_Country_Club.ipynb) | SQL wrap up using country club facility / booking / member data. *Issues with Springboard's PHPMyAdmin server*  | ✔️ |
 |   |   |   |   |
 
 **Resources**
