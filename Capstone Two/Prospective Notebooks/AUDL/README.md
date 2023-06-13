@@ -9,6 +9,7 @@ US/Canada Professional men's ultimate frisbee league, active from 2012-*present*
  - individual player stats
  - "play-by-play" with position tracking for frisbee
    - each attempted throw and related events
+ - team information (location, colors, etc. . . )
  - more . . .
  
 *Rules*
@@ -43,4 +44,6 @@ US/Canada Professional men's ultimate frisbee league, active from 2012-*present*
 https://www.docs.audlstats.com/
 
 #### Unlisted Endpoints
+
+ - 
 
