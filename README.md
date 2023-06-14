@@ -12,8 +12,8 @@
 | 7.4 | [Nasa Meteorites Report](/7.4.2%20Meteorites/meteorites.ipynb) | Notebook example showing use of [ydata-profiling](https://ydata-profiling.ydata.ai/docs/master/pages/getting_started/quickstart.html) to generate reports from `DataFrames`, part of **7.4 - Data Defintions**. Example HTML reports contained in folder. | ✔️ |
 | 8.3 | [SQL Case Study](/8.3.3%20SQL%20Case%20Study/SQL_Country_Club.ipynb) | SQL wrap up using country club facility / booking / member data. *Issues with Springboard's PHPMyAdmin server*  | ✔️ |
 | 11.1 | **Frequentist Inference** [Part A](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20A.ipynb), [Part B](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20B.ipynb)  | Statisical inference exercises. Introduction to [scipy](https://docs.scipy.org/doc/scipy/index.html) package.  | *submitted* x 2  |
-| 11.3 | [Hypothesis Testing - Integrating Apps](/11.3%20Hypothesis%20Testing/Case%20Study_Integrating%20Apps%20-%20Tier%203.ipynb)  | Case study were user reviews from *X* better than for *Y*? | *in progress*  |
-| 11.4 | [Linear Regression - Red Wine](/11.4%20Modeling_LinReg/Regression%20Case%20Study%20-%20Red%20Wine%20-%20Tier%203.ipynb) | Case study using a Kaggle wine dataset for regression practice.  | *in progress*  |
+| 11.3 | [Hypothesis Testing - Integrating Apps](/11.3%20Hypothesis%20Testing/Case%20Study_Integrating%20Apps%20-%20Tier%203.ipynb)  | Case study were user reviews from *X* better than for *Y*? | *submitted*  |
+| 11.4 | [Linear Regression - Red Wine](/11.4%20Modeling_LinReg/Regression%20Case%20Study%20-%20Red%20Wine%20-%20Tier%203.ipynb) | Case study using a Kaggle wine dataset for regression practice.  | *submitted*  |
 
 **Resources**
  - [Python Data Science Notebook](https://github.com/jakevdp/PythonDataScienceHandbook)
