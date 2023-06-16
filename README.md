@@ -44,11 +44,11 @@
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
-| 7.1 | [Project Proposal](/Capstone%Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | *submitted* |
-| 7.6 | [Data Wrangling](/Capstone%Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | *submitted*  |
-| 11.5 | [Exploratory Data Analysis](/Capstone%Two/---.ipynb) | Notebook containing initial data exploration steps and descriptions.  | *in progress* |
-| 16.3 | [Pre-processing and Training](/Capstone%Two/---.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | *in progress* |
-| 18.3 | [Modeling](/Capstone%Two/---.ipynb) | Notebook containing initial modeling steps and descriptions.  | *in progress* |
-| 20.4 | [Final Report](/Capstone%Two/Report/) | Model metrics file, report document, slide deck for *Capstone Two* presentation. Brief summary in [Readme]().  | *in progress*  |
+| 7.1 | [Project Proposal](/Capstone%20Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | *submitted* |
+| 7.6 | [Data Wrangling](/Capstone%20Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | *submitted*  |
+| 11.5 | [Exploratory Data Analysis](/Capstone%20Two/---.ipynb) | Notebook containing initial data exploration steps and descriptions.  | *in progress* |
+| 16.3 | [Pre-processing and Training](/Capstone%20Two/---.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | *in progress* |
+| 18.3 | [Modeling](/Capstone%20Two/---.ipynb) | Notebook containing initial modeling steps and descriptions.  | *in progress* |
+| 20.4 | [Final Report](/Capstone%20Two/Report/) | Model metrics file, report document, slide deck for *Capstone Two* presentation. Brief summary in [Readme]().  | *in progress*  |
 
 ## Capstone Three
