@@ -2,7 +2,19 @@
 
 *Submissions for Springboard Data Science curriculum.*
 
-## Contents
+ - [Submissions](#Submissions)
+   - *[Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone) (external repo)*
+ - [Capstone Two](#Capstone-Two)
+ - [Capstone Three](#Capstone-Three)
+
+**Notes and Resources**
+ - [**Python Data Science Notebook**](https://github.com/jakevdp/PythonDataScienceHandbook)
+ - [**Guided Capstone**](https://github.com/NBPub/DataScienceGuidedCapstone#useful-tidbits)
+ - [**Stat Book**](/10.1%20StatBookNotes)
+   - [**LI Learning**](/10.1%20StatBookNotes/LI_Learning_notes.md)
+ - [**Macine Learning Notes**](/ML_Notes)
+
+## Submissions
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
@@ -14,7 +26,7 @@
 | 11.1 | **Frequentist Inference** [Part A](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20A.ipynb), [Part B](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20B.ipynb)  | Statisical inference exercises. Introduction to [scipy](https://docs.scipy.org/doc/scipy/index.html) package.  | *submitted* x 2  |
 | 11.3 | [Hypothesis Testing - Integrating Apps](/11.3%20Hypothesis%20Testing/Case%20Study_Integrating%20Apps%20-%20Tier%203.ipynb)  | Case study were user reviews from *X* better than for *Y*? | ✔️ |
 | 11.4 | [Linear Regression - Red Wine](/11.4%20Modeling_LinReg/Regression%20Case%20Study%20-%20Red%20Wine%20-%20Tier%203.ipynb) | Case study using a Kaggle wine dataset for regression practice.  | ✔️ |
-| 11.4 | [Linear Regression - Boston Housing](/11.4%20LinReg_Boston%20Housing/Mini_Project_Linear_Regression.ipynb) | Mini-project, predict house prices from data using OLS regression.  | *submitted*|
+| 11.4 | [Linear Regression - Boston Housing](/11.4%20LinReg_Boston%20Housing/Mini_Project_Linear_Regression.ipynb) | Mini-project, predict house prices from data using OLS regression.  | ✔️ |
 | 14.2 | [Logistic Regression](/) | . . .  | . . . |
 | 14.3 | [RR Diner Coffee](/) | . . .  | . . . |
 | 14.4 | [Random Forest](/) | . . .  | . . . |
@@ -26,20 +38,17 @@
 
 
 
-**Resources**
- - [Python Data Science Notebook](https://github.com/jakevdp/PythonDataScienceHandbook)
- - [**Book Notes**](/10.1%20StatBookNotes)
-   - [**LI Learning** stats notes](/10.1%20StatBookNotes/LI_Learning_notes.md)
+
 
 ## Capstone Two
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
-| 7.1 | [Project Proposal](/Capstone%Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | **TBD** |
-| 7.6 | [Data Wrangling](/Capstone%Two/---.ipynb) | Notebook containing initial data cleaning steps and descriptions.  |  |
-| 11.5 | [Exploratory Data Analysis](/Capstone%Two/---.ipynb) | Notebook containing initial data exploration steps and descriptions.  |  |
-| 16.3 | [Pre-processing and Training](/Capstone%Two/---.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  |  |
-| 18.3 | [Modeling](/Capstone%Two/---.ipynb) | Notebook containing initial modeling steps and descriptions.  |  |
-| 20.4 | [Final Report](/Capstone%Two/Report/) | Model metrics file, report document, slide deck for *Capstone Two* presentation. Brief summary in [Readme]().  |  |
+| 7.1 | [Project Proposal](/Capstone%Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | *submitted* |
+| 7.6 | [Data Wrangling](/Capstone%Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | *submitted*  |
+| 11.5 | [Exploratory Data Analysis](/Capstone%Two/---.ipynb) | Notebook containing initial data exploration steps and descriptions.  | *in progress* |
+| 16.3 | [Pre-processing and Training](/Capstone%Two/---.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | *in progress* |
+| 18.3 | [Modeling](/Capstone%Two/---.ipynb) | Notebook containing initial modeling steps and descriptions.  | *in progress* |
+| 20.4 | [Final Report](/Capstone%Two/Report/) | Model metrics file, report document, slide deck for *Capstone Two* presentation. Brief summary in [Readme]().  | *in progress*  |
 
 ## Capstone Three
