@@ -5,7 +5,9 @@
  - [Submissions](#Submissions)
    - *[Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone) (external repo)*
  - [Capstone Two](#Capstone-Two)
+   - [Project Page](/Capstone%20Two/)
  - [Capstone Three](#Capstone-Three)
+   - [Project Page](/Capstone%20Three/)
 
 **Notes and Resources**
  - [**Python Data Science Notebook**](https://github.com/jakevdp/PythonDataScienceHandbook)
