@@ -31,6 +31,11 @@
  - Descision Trees
  - Random Forest
  - Gradient Boosting
+<br>
+ - Other
+   - Guided Capstone Notes
+     - cross-validation, metrics, others?
+	 
 
 #### Imbalanced Data | [link](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
@@ -90,7 +95,7 @@ Break down problem into more tractable, smaller problems. Get inspiration from o
 
 </details> 
  
-### kNN
+### kNN | [Harvard CS109 lecture 09](https://youtu.be/uhHqzqj5Pio?t=495)
 
 **Basic Idea**
 
@@ -107,11 +112,69 @@ As neighbors are increased, bias is introduced and variance decreases. Smoother 
 AKA **Hyper-Parameter evaluation**. 5 and 10-fold are typical choices for CV. Depends on size of dataset and choice of classifier.
 For example, smaller datasets can't fold as much. Make sure test-data is untouched until final evaluation.
 
+**Distance Calculations**, Training Classifier
+
+> choice of feature is one of most important things in classification, self-driving car example . . . many different "detectors" to provide many different features to provide best decisions
+
+
+ - very basic for image classifier: pixel-by-pixel distance distance
+   - euclidean
+   - L1
+   - L2
+ - SIFT
+   - Rotation, Scale Invariant
+   
+Feature additions may help training accuracy, but then encounter [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality), 
+the space is now too far and neighbors are far apart. Therefore . . .
+
+**Dimensionality Reduction**
+
+**Idea:** Bring down dimensionality of vectors generated from pixels while preserving the distance between neighbors.
+*watch this part again as a review [timestamp](https://youtu.be/uhHqzqj5Pio?t=3814)
+
+Also useful for compression and visualization (PCA music example).
+
+- techniques
+  - linear models *why are they more commonly used?*
+  - non-linear methods
+  
+**PCA** | [previous notes](https://github.com/NBPub/DataScienceGuidedCapstone#principal-component-analysis-1)
+  
+Post-Office Handwriting Recognition Example
+
+**Multi-Dimensional Scaling (MDS)** | [wiki](https://en.wikipedia.org/wiki/Multidimensional_scaling) | [other](https://dept.stat.lsa.umich.edu/~jerrick/courses/stat701/notes/mds.html#:~:text=Multidimensional%20Scaling%20(MDS)%20is%20a,to%20find%20patterns%20or%20groupings.)
+
+... notes ...
+
+### Metrics
+
+ - Confusion Matrix for Classification
+   - Precision, Recall, F1 Score
+   - scikit learn --> `classification_report`
+ - ROC curve for Logistic Regression
+   - see/take statistics book notes
+ - Hyperparameter tuning 
+   - many examples elsewhere (k for kNN, alpha for ridge/lasso regression)
+   - Grid Search CV, [guided capstone notes](https://github.com/NBPub/DataScienceGuidedCapstone#hyperparameter-search-using-gridsearchcv)
+   - Randomized Search CV
+   
+### Preprocessing, Pipelines
+
+ - 
+
+### Regularized Regression
+
+#### Ridge
+
+#### Lasso
+
 
 	 
 ### Ideas for Capstone Two
 
  - win model / probability
    - Naive Bayes vs Logistic Regression *maybe* vs Decision Tree
+   
+*Other, PCA example with acoustic patterns in music*: project to expand on my library, explore particular genre grouping
 
 
