@@ -32,8 +32,8 @@
 | 14.2 | [Logistic Regression](/14.2%20Logistic%20Regression/Logistic%20Regression%20Advanced%20Case%20Study.ipynb) | Case study using healthcare patient data, predicting heart disease. Brief discussion of model tuning. Added extra notes to Confusion Matrix / Precision / Recall section.  | *submitted* |
 | 14.3 | [Decision Trees - RR Diner Coffee](/14.3%20Decision%20Trees/Decision%20Tree%20Specialty%20Coffee%20Case%20Study%20-%20Tier%203.ipynb) | Use customer survey to predict if others will buy new coffee.  | *submitted* |
 | 14.4 | [Random Forest](/14.4%20Random%20Forest/RandomForest_casestudy_covid19.ipynb) | Random Forest overview and discussion, basic demonstration with patient data and classification.  | *submitted* |
-| 14.5 | [Gradient Boosting](/14.5%20Gradient%20Boosting/Gradient%20Boosting%20Case%20Study.ipynb) | Gradient Boosting basic demonstration with Titanic survivors dataset.  | *submitted* |
-| 15.2 | [Calculating Distances](/15.2%20Euclidean%20and%20Manhattan%20Distances/Euclidean_and_Manhattan_Distances_Case_Study.ipynb) | . . .  | *in progress* |
+| 14.5 | [Gradient Boosting](/14.5%20Gradient%20Boosting/Gradient%20Boosting%20Case%20Study.ipynb) | Gradient Boosting basic demonstration for curve fitting and with Titanic survivors dataset.  | *submitted* |
+| 15.2 | [Calculating Distances](/15.2%20Euclidean%20and%20Manhattan%20Distances/Euclidean_and_Manhattan_Distances_Case_Study.ipynb) | Visual demonstrations of Euclidean vs Manhattan distance calculations. | *submitted* |
 | 15.5 | [Cosine Similarity](/15.5%20Cosine%20Similarity/Cosine_Similarity_Case_Study.ipynb) | . . .  | *in progress* |
 | 15.6 | [PCA, K-Means Clustering - Customer Segmentation](/15.6%20PCA_K-Means%20clustering/Clustering%20Case%20Study%20-%20Customer%20Segmentation%20with%20K-Means.ipynb) | . . .  | *in progress* |
 | 18.2 | [Name](/) | . . .  | . . . |
