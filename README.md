@@ -25,17 +25,17 @@
 | 7.2 | [API Mini-Project](/7.2.5%20API%20Mini-Project/api_data_wrangling_mini_project.ipynb) | Last assignment for **Data Wrangling** portion, **7.2** of the DSM | ✔️ |
 | 7.4 | [Nasa Meteorites Report](/7.4.2%20Meteorites/meteorites.ipynb) | Notebook example showing use of [ydata-profiling](https://ydata-profiling.ydata.ai/docs/master/pages/getting_started/quickstart.html) to generate reports from `DataFrames`, part of **7.4 - Data Defintions**. Example HTML reports contained in folder. | ✔️ |
 | 8.3 | [SQL Case Study](/8.3.3%20SQL%20Case%20Study/SQL_Country_Club.ipynb) | SQL wrap up using country club facility / booking / member data. *Issues with Springboard's PHPMyAdmin server*  | ✔️ |
-| 11.1 | **Frequentist Inference** [Part A](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20A.ipynb), [Part B](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20B.ipynb)  | Statisical inference exercises. Introduction to [scipy](https://docs.scipy.org/doc/scipy/index.html) package.  | ✔️ ✔️ |
+| 11.1 | **Frequentist Inference** [Part A](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20A.ipynb), [Part B](/11.1%20Statistical%20Inference/Frequentist%20Inference%20Case%20Study%20-%20Part%20B.ipynb)  | Statisical inference exercises. Introduction to [scipy](https://docs.scipy.org/doc/scipy/index.html) package.  | ✔️✔️ |
 | 11.3 | [Hypothesis Testing - Integrating Apps](/11.3%20Hypothesis%20Testing/Case%20Study_Integrating%20Apps%20-%20Tier%203.ipynb)  | Case study were user reviews from *X* better than for *Y*? | ✔️ |
 | 11.4 | [Linear Regression - Red Wine](/11.4%20Modeling_LinReg/Regression%20Case%20Study%20-%20Red%20Wine%20-%20Tier%203.ipynb) | Case study using a Kaggle wine dataset for regression practice.  | ✔️ |
 | 11.4 | [Linear Regression - Boston Housing](/11.4%20LinReg_Boston%20Housing/Mini_Project_Linear_Regression.ipynb) | Mini-project, predict house prices from data using OLS regression.  | ✔️ |
-| 14.2 | [Logistic Regression](/) | . . .  | . . . |
-| 14.3 | [RR Diner Coffee](/) | . . .  | . . . |
-| 14.4 | [Random Forest](/) | . . .  | . . . |
-| 14.5 | [Gradient Boosting](/) | . . .  | . . . |
-| 15.2 | [Calculating Distances](/) | . . .  | . . . |
-| 15.5 | [Cosine Similarity](/) | . . .  | . . . |
-| 15.6 | [Customer Segmentation](/) | . . .  | . . . |
+| 14.2 | [Logistic Regression](/14.2%20Logistic%20Regression/Logistic%20Regression%20Advanced%20Case%20Study.ipynb) | Case study using healthcare patient data, predicting heart disease. Brief discussion of model tuning. Added extra notes to Confusion Matrix / Precision / Recall section.  | *submitted* |
+| 14.3 | [Decision Trees - RR Diner Coffee](/14.3%20Decision%20Trees/Decision%20Tree%20Specialty%20Coffee%20Case%20Study%20-%20Tier%203.ipynb) | Use customer survey to predict if others will buy new coffee.  | *submitted* |
+| 14.4 | [Random Forest](/14.4%20Random%20Forest/RandomForest_casestudy_covid19.ipynb) | Random Forest overview and discussion, basic demonstration with patient data and classification.  | *submitted* |
+| 14.5 | [Gradient Boosting](/14.5%20Gradient%20Boosting/Gradient%20Boosting%20Case%20Study.ipynb) | Gradient Boosting basic demonstration with Titanic survivors dataset.  | *submitted* |
+| 15.2 | [Calculating Distances](/15.2%20Euclidean%20and%20Manhattan%20Distances/Euclidean_and_Manhattan_Distances_Case_Study.ipynb) | . . .  | *in progress* |
+| 15.5 | [Cosine Similarity](/15.5%20Cosine%20Similarity/Cosine_Similarity_Case_Study.ipynb) | . . .  | *in progress* |
+| 15.6 | [PCA, K-Means Clustering - Customer Segmentation](/15.6%20PCA_K-Means%20clustering/Clustering%20Case%20Study%20-%20Customer%20Segmentation%20with%20K-Means.ipynb) | . . .  | *in progress* |
 | 18.2 | [Name](/) | . . .  | . . . |
 
 

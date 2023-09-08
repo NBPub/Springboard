@@ -40,9 +40,11 @@
        - ***Additional Data Cleaning required!***. Some O/D score stats need to be adjusted.
    - `home/away_completion_rate` vs `away/home_block_rate`
      - should be slightly different due to throwaways, basically space between features is throwaways
-	 - therefore this "space" should still be captured in model
+	 - this "space" should still be captured in model
    - `home/away_o_poss_per_hold` vs `away/home_d_poss_per_pt`
      - defined slightly differently when assessing potential derived features vs target features
+	   - which had stronger relationships with target features
+	   - somewhat arbitrarily, which distribution looked more normal
 	 - may decide to just keep one option during preprocessing
    
    
@@ -54,3 +56,4 @@
 
  - throws > completions
  - home/away blocks > away/home turnovers
+ - remove all-star games before model building
