@@ -29,13 +29,13 @@
 | 11.3 | [Hypothesis Testing - Integrating Apps](/11.3%20Hypothesis%20Testing/Case%20Study_Integrating%20Apps%20-%20Tier%203.ipynb)  | Case study were user reviews from *X* better than for *Y*? | ✔️ |
 | 11.4 | [Linear Regression - Red Wine](/11.4%20Modeling_LinReg/Regression%20Case%20Study%20-%20Red%20Wine%20-%20Tier%203.ipynb) | Case study using a Kaggle wine dataset for regression practice.  | ✔️ |
 | 11.4 | [Linear Regression - Boston Housing](/11.4%20LinReg_Boston%20Housing/Mini_Project_Linear_Regression.ipynb) | Mini-project, predict house prices from data using OLS regression.  | ✔️ |
-| 14.2 | [Logistic Regression](/14.2%20Logistic%20Regression/Logistic%20Regression%20Advanced%20Case%20Study.ipynb) | Case study using healthcare patient data, predicting heart disease. Brief discussion of model tuning. Added extra notes to Confusion Matrix / Precision / Recall section.  | *submitted* |
-| 14.3 | [Decision Trees - RR Diner Coffee](/14.3%20Decision%20Trees/Decision%20Tree%20Specialty%20Coffee%20Case%20Study%20-%20Tier%203.ipynb) | Use customer survey to predict if others will buy new coffee.  | *submitted* |
-| 14.4 | [Random Forest](/14.4%20Random%20Forest/RandomForest_casestudy_covid19.ipynb) | Random Forest overview and discussion, basic demonstration with patient data and classification.  | *submitted* |
-| 14.5 | [Gradient Boosting](/14.5%20Gradient%20Boosting/Gradient%20Boosting%20Case%20Study.ipynb) | Gradient Boosting basic demonstration for curve fitting and with Titanic survivors dataset.  | *submitted* |
-| 15.2 | [Calculating Distances](/15.2%20Euclidean%20and%20Manhattan%20Distances/Euclidean_and_Manhattan_Distances_Case_Study.ipynb) | Visual demonstrations of Euclidean vs Manhattan distance calculations. | *submitted* |
-| 15.5 | [Cosine Similarity](/15.5%20Cosine%20Similarity/Cosine_Similarity_Case_Study.ipynb) | . . .  | *in progress* |
-| 15.6 | [PCA, K-Means Clustering - Customer Segmentation](/15.6%20PCA_K-Means%20clustering/Clustering%20Case%20Study%20-%20Customer%20Segmentation%20with%20K-Means.ipynb) | . . .  | *in progress* |
+| 14.2 | [Logistic Regression](/14.2%20Logistic%20Regression/Logistic%20Regression%20Advanced%20Case%20Study.ipynb) | Case study using healthcare patient data, predicting heart disease. Brief discussion of model tuning. Added extra notes to Confusion Matrix / Precision / Recall section.  | ✔️ |
+| 14.3 | [Decision Trees - RR Diner Coffee](/14.3%20Decision%20Trees/Decision%20Tree%20Specialty%20Coffee%20Case%20Study%20-%20Tier%203.ipynb) | Use customer survey to predict if others will buy new coffee.  | ✔️ |
+| 14.4 | [Random Forest](/14.4%20Random%20Forest/RandomForest_casestudy_covid19.ipynb) | Random Forest overview and discussion, basic demonstration with patient data and classification.  | ✔️ |
+| 14.5 | [Gradient Boosting](/14.5%20Gradient%20Boosting/Gradient%20Boosting%20Case%20Study.ipynb) | Gradient Boosting basic demonstration for curve fitting and with Titanic survivors dataset.  | ✔️ |
+| 15.2 | [Calculating Distances](/15.2%20Euclidean%20and%20Manhattan%20Distances/Euclidean_and_Manhattan_Distances_Case_Study.ipynb) | Visual demonstrations of Euclidean vs Manhattan distance calculations. | ✔️ |
+| 15.5 | [Cosine Similarity](/15.5%20Cosine%20Similarity/Cosine_Similarity_Case_Study.ipynb) | Brief example of calculation using numerical and text data (with preprocessing steps).  | *submitted* |
+| 15.6 | [PCA, K-Means Clustering - Customer Segmentation](/15.6%20PCA_K-Means%20clustering/Clustering%20Case%20Study%20-%20Customer%20Segmentation%20with%20K-Means.ipynb) | Customer survery clustering, example with limited features. Variety of algorithms and evaluation metrics used.  | *submitted* |
 | 18.2 | [Name](/) | . . .  | . . . |
 
 
