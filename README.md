@@ -35,10 +35,11 @@
 | 14.5 | [Gradient Boosting](/14.5%20Gradient%20Boosting/Gradient%20Boosting%20Case%20Study.ipynb) | Gradient Boosting basic demonstration for curve fitting and with Titanic survivors dataset.  | ✔️ |
 | 15.2 | [Calculating Distances](/15.2%20Euclidean%20and%20Manhattan%20Distances/Euclidean_and_Manhattan_Distances_Case_Study.ipynb) | Visual demonstrations of Euclidean vs Manhattan distance calculations. | ✔️ |
 | 15.5 | [Cosine Similarity](/15.5%20Cosine%20Similarity/Cosine_Similarity_Case_Study.ipynb) | Brief example of calculation using numerical and text data (with preprocessing steps).  | *submitted* |
-| 15.6 | [PCA, K-Means Clustering - Customer Segmentation](/15.6%20PCA_K-Means%20clustering/Clustering%20Case%20Study%20-%20Customer%20Segmentation%20with%20K-Means.ipynb) | Customer survery clustering, example with limited features. Variety of algorithms and evaluation metrics used.  | *submitted* |
-| 18.2 | [Name](/) | . . .  | . . . |
-
-
+| 15.6 | [PCA, K-Means Clustering - Customer Segmentation](/15.6%20PCA_K-Means%20clustering/Clustering%20Case%20Study%20-%20Customer%20Segmentation%20with%20K-Means.ipynb) | Customer survery clustering, example with limited features. Variety of algorithms and evaluation metrics used.  | ✔️ |
+| 16.2 | [`featuretools` Automated Feature Engineering](/) | [Tutorial](https://github.com/alteryx/predict-customer-churn/tree/master) notebook for **[featuretools](https://github.com/alteryx/featuretools)** package, customer *churn* prediction from Kaggle [dataset](https://www.kaggle.com/c/kkbox-churn-prediction-challenge/data)  | ✔️ |
+| 18.2 | [Grid Search with kNN](/18.2.4%20kNN%20Grid%20Search/GridSearchKNN_Case_Study.ipynb) | Brief hyperparameter tuning example using nearest neighbors and random forest models.  | *submitted* |
+| 18.2 | [Bayesian Optimization](/18.2.6%20Bayesian%20Optimization/Bayesian_optimization_case_study.ipynb) | Bayesian optimization (package) for hyperparameter tuning, LightGBM and CatBoost models. | *submitted* |
+| ... | ... | ... | ... |
 
 
 
@@ -46,8 +47,8 @@
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
-| 7.1 | [Project Proposal](/Capstone%20Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | *revising* |
-| 7.6 | [Data Wrangling](/Capstone%20Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | *revising*  |
+| 7.1 | [Project Proposal](/Capstone%20Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | *revising* ✔️ |
+| 7.6 | [Data Wrangling](/Capstone%20Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | *revising* ✔️  |
 | 11.5 | [Exploratory Data Analysis](/Capstone%20Two/---.ipynb) | Notebook containing initial data exploration steps and descriptions.  | *in progress* |
 | 16.3 | [Pre-processing and Training](/Capstone%20Two/---.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | *in progress* |
 | 18.3 | [Modeling](/Capstone%20Two/---.ipynb) | Notebook containing initial modeling steps and descriptions.  | *in progress* |
