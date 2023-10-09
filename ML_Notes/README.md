@@ -1,5 +1,7 @@
 # Machine Learning Notes
 
+*transitioned to paper notes for ML units, will try to document important concepts and related links on these pages*
+
 ### Pages
 
  - *[13 Introduction](/#13) this page*
