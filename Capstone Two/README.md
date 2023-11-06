@@ -14,9 +14,12 @@
 [Data Folder](/Capstone%20Two/data/) | [Graphs Folder](/Capstone%20Two/graphs/) | 
 
 ### Python Environment
- - Python | 3.10.11
- - pandas | 1.5.3
- - numpy | 1.24.3
+
+*not current, can list general version range*
+
+ - Python | 3.10, 3.11
+ - pandas | 1.5.3, 2.0
+ - numpy | 1.24.3, 
  - requests | 2.29.0
  - scikit-learn | 1.2.2
  - matplotlib | 3.7.1
@@ -25,6 +28,9 @@
  - pyarraow | 11.0.0
  - tqdm | 4.65.0
  - ydata_profiling | 4.1.1
+ 
+### PyCaret Virtual Environment
+ 
    
 ## Overview
 
