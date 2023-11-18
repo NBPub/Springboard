@@ -104,6 +104,7 @@ scikit-image==0.22.0
 scikit-learn==1.2.2
 scikit-plot==0.3.7
 scipy==1.10.1
+seaborn==0.13.0
 shap==0.41.0
 six==1.16.0
 skope-rules==1.0.1
