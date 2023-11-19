@@ -30,7 +30,7 @@
  
 ### PyCaret Virtual Environment
 
-See [pycaret_requirements](/pycaret_requirements.txt) for list of packages installed in my venv for Pycaret. Fresh installation without requirements file recommended.
+See [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of packages installed in my venv for Pycaret. Fresh installation without requirements file recommended.
  
    
 ## Overview
@@ -42,16 +42,21 @@ See [pycaret_requirements](/pycaret_requirements.txt) for list of packages insta
 
 <details><summary>Data Cleaning</summary>
 
+<br>**Feature Distributions after data collection**<br>
 ![Initial](/Capstone%20Two/graphs/data_cleaning/initial_distributions.png "Feature distributions after data collection") 
+<br>**Feature Distributions after data cleaning**<br>
 ![Final](/Capstone%20Two/graphs/data_cleaning/clean_1_distributions.png "Feature distributions after data cleaning") 
 
 </details>
 
 <details><summary>EDA - Feature Distributions and Relationships</summary>
 
-![Correlation](/Capstone%20Two/graphs/EDA/corr_heatmap.png "Correlation Heat Map") 
+<br>**Feature Distributions, relation to Home Margin**<br>
 ![Distribution, Margin](/Capstone%20Two/graphs/EDA/hist_vs_margin.png "Features vs home margin") 
+<br>**Feature Distributions, relation to Home Win**<br>
 ![Distribution, Win](/Capstone%20Two/graphs/EDA/all_features_hist_vs_win.png "Features vs home win chance") 
+<br>**Feature+Target Correlations**<br>
+![Correlation](/Capstone%20Two/graphs/EDA/corr_heatmap.png "Correlation Heat Map") 
 
 </details>
 
@@ -59,28 +64,31 @@ See [pycaret_requirements](/pycaret_requirements.txt) for list of packages insta
 
 *see more thresholds and outlier detection based on PCA components in [folder](/Capstone%20Two/graphs/Outlier%20Detection)*
 
+<br>**Isolation Forest**<br>
 ![Isolation Forest](/Capstone%20Two/graphs/Outlier%20Detection/engineered%20features/IsoForest_0.05.png "Isolation Forest - outlier detection") 
-![Local Outlier Factor](/Capstone%20Two/graphs/Outlier%20Detection/engineered%20features/LocalOutlierFactor_.05.png "Local Outlier Factor - outlier detection") 
+<br>**Local Outlier Factor**<br>
+![Local Outlier Factor](/Capstone%20Two/graphs/Outlier%20Detection/engineered%20features/LocalOutlierFactor_0.05.png "Local Outlier Factor - outlier detection") 
 
 
 </details>
 
 <details><summary>Preprocessing</summary>
 
-**Linear Model Feature Selection**
+<br>**Linear Model Feature Selection**<br>
 ![feature selection](/Capstone%20Two/graphs/PreProc/linear-models_feature-selection-zoomed.png "various linear models performance vs number of features selected") 
-
-**Model Selection after HyperParameter Tuning**
+<br>**Model Selection after HyperParameter Tuning**
 ![model selection](/Capstone%20Two/graphs/PreProc/model-selection_RMSE-vs-MAE.png "Tuned model metrics") 
 
 </details>
 
 <details><summary>Final Model</summary>
 
-
+<br>**Predicted vs Actual Home Margin**<br>
 ![residuals_1](/Capstone%20Two/graphs/Model/final_predicted-vs-actual.png "Predicted Home Margin vs Actual Home Margin") 
-![residuals_2](/Capstone%20Two/graphs/Model/final_residual-by-yearl.png "Residuals by season") 
-![residuals_3](//Capstone%20Two/graphs/Model/final_residual-by-team.png "Resiudals by home/away team")
+<br>**Residuals vs Season**<br>
+![residuals_2](/Capstone%20Two/graphs/Model/final_residual-by-year.png "Residuals by season") 
+<br>**Residuals vs Home/Away Teams**<br>
+![residuals_3](/Capstone%20Two/graphs/Model/final_residual-by-team.png "Resiudals by home/away team")
 
 </details>
 
