@@ -4,12 +4,13 @@
 
  1. [Project Proposal](/Capstone%20Two/propsal.pdf)
  2. [Data Wrangling Notebook](/Capstone%20Two/7.6_Wrangling.ipynb)
- 3. [EDA Notebook](/Capstone%20Two/11.6_EDA.ipynb) *actual assignment is "11.5"* | [Outlier Detection](/Capstone%20Two/11.6_EDA_outlier-detection.ipynb)
+ 3. [EDA Notebook](/Capstone%20Two/11.6_EDA.ipynb)  | [Outlier Detection](/Capstone%20Two/11.6_EDA_outlier-detection.ipynb) *actual assignment is "11.5"*
  4. [Preprocessing Notebook](/Capstone%20Two/16.3_Preprocessing-Training.ipynb)
  5. [Modeling Notebook](/Capstone%20Two/18.3_Modeling_final.ipynb) | [Model Selection](/Capstone%20Two/18.3_Modeling_selection.ipynb)
  6. [Project Report](/Capstone%20Two/Report)
 	- [slides](/Capstone%20Two/Report/slides.pdf)
 	- [report](/Capstone%20Two/Report/report.pdf)
+	- [model metrics](/Capstone%20Two/Report/final_model.csv)
    
 **| [Data Folder](/Capstone%20Two/data/) | [Graphs Folder](/Capstone%20Two/graphs/) |**
 
