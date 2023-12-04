@@ -12,7 +12,7 @@
  2. [Data Wrangling Notebook](/Capstone%20Two/7.6_Wrangling.ipynb)
  3. [EDA Notebook](/Capstone%20Two/11.6_EDA.ipynb)  | [Outlier Detection](/Capstone%20Two/11.6_EDA_outlier-detection.ipynb) *actual assignment is "11.5"*
  4. [Preprocessing Notebook](/Capstone%20Two/16.3_Preprocessing-Training.ipynb)
- 5. [Modeling Notebook](/Capstone%20Two/18.3_Modeling.ipynb)
+ 5. [Modeling Notebook](/Capstone%20Two/18.3_Modeling.ipynb) | [Classification Notebook](/Capstone%20Two/18.3_Modeling_Classification.ipynb)
  6. [Project Report](/Capstone%20Two/Report)
 	- [slides](/Capstone%20Two/Report/capstone_two_audl_slides.pdf)
 	- [report](/Capstone%20Two/Report/capstone_two_audl_report.pdf)
@@ -50,7 +50,7 @@
 
 *see the [report](/Capstone%20Two/Report/capstone_two_audl_report.pdf) for more details*
 
-**Background**
+**Background, Problem Statement**
  - American Ultimate Disc League (AUDL) is a men’s professional Ultimate Frisbee league established 2013 in North America, currently consisting of 24 teams across four regional divisions
  - use the most basic game summary statistics to predict the outcome of the game: the winning team and the difference in the two teams’ scores
    - final models should provide a basis for understanding the remaining summary statistics
@@ -63,7 +63,7 @@
    
 **Data Cleaning**
  - some 0 values are real, some indicate missing data 
- - newer statistics (redzone, hucks) not recorded until midway through 2020
+ - newer statistics (redzone, hucks) not recorded until midway through 2021
  - *bring in list of checks from EDA notebook?*
  - Remaining Questions
    - blocks vs turnovers vs incompletions
@@ -81,7 +81,7 @@
 **Features**
  - only basic stats used for modeling: **throws, completions, blocks, turnovers**
  - used to engineer additional Features
-   - completion rate, completion rate difference, block-turnover difference
+   - **completion rate, completion rate difference, block-turnover difference**
  - target features used the final score for definition
    - **home margin** = `home_score - away_score`
    - **home win** = `if home_score > away_score`
@@ -107,14 +107,18 @@
 **Modeling**
  - separate studies for each target, separated into two notebooks
  - PyCaret used to streamline initial studies, scikit-learn + manual loops were then used to evaluate and train final models
+   - final hyperparameter tuning with RandomizedSearch, [help with distributions](https://nbpub.pythonanywhere.com/)
  - **Regression for Margin**
-   - CatBoost, GBR, XGB (tree), kNN all performed well. Voting Regressor blend of first two selected for final model
+   - CatBoost, GBR, XGB (tree based boosting), kNN all performed well. Voting Regressor blend of first two selected for final model
+     - residuals analyzed and shown below. two worst errors were games with faulty records that should have been removed during cleaning.
  - **Binary Classification for Home win**
-   - kNN, Extra Trees, SGD, CatBoost classifiers all performed well. kNN selected for final model.
+   - kNN, Extra Trees, SGD, CatBoost classifiers all performed well. kNN selected for final model
+     - kNN better recall, slightly worse precision. not as good at identifying narrow lossess?
+	 - results from one more false positive than others, possible faulty record?
 
 <details><summary>Regression Model graphs</summary>
 
-<br>**Predicted vs Actual Home Margin**<br>
+<br>**Tuned Model Selection**<br>
 ![residuals_1](/Capstone%20Two/graphs/Model/model-selection_RMSE-vs-MAE.png "Model evaluation by RMSE, R2, MAE") 
 <br>**Predicted vs Actual Home Margin**<br>
 ![residuals_1](/Capstone%20Two/graphs/Model/final_predicted-vs-actual.png "Predicted Home Margin vs Actual Home Margin") 

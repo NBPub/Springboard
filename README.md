@@ -47,11 +47,13 @@
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
-| 7.1 | [Project Proposal](/Capstone%20Two/---.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | *revising* ✔️ |
+| 7.1 | [Project Proposal](/Capstone%20Two/7.1_Project%20Propsal.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | ✔️ |
 | 7.6 | [Data Wrangling](/Capstone%20Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | ✔️ |
-| 11.5 | [Exploratory Data Analysis](/Capstone%20Two/---.ipynb) | Notebook containing initial data exploration steps and descriptions.  | ✔️ |
-| 16.3 | [Pre-processing and Training](/Capstone%20Two/---.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | ✔️ |
-| 18.3 | [Modeling](/Capstone%20Two/---.ipynb) | Notebook containing initial modeling steps and descriptions.  | *submitted* ✔️ |
-| 20.4 | [Final Report](/Capstone%20Two/Report/) | Model metrics file, report document, slide deck for *Capstone Two* presentation. Brief summary in [Readme]().  | *in progress*  |
+| 11.5 | [Exploratory Data Analysis](/Capstone%20Two/11.6_EDA.ipynb) | Notebook containing initial data exploration steps and descriptions.  | ✔️ |
+| 16.3 | [Pre-processing and Training](/Capstone%20Two/16.3_Preprocessing-Training.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | ✔️ |
+| 18.3 | [Modeling](/Capstone%20Two/18.3_Modeling.ipynb) | Notebook containing initial modeling steps and descriptions.  | ✔️ |
+| 20.4 | [Final Report](/Capstone%20Two/Report/capstone_two_audl_report.pdf) | Final report for *Capstone Two*. [Brief summary](/Capstone%20Two#Overview)  | *in progress*  |
+| 20.4 | [Final Model](/Capstone%20Two/Report/final_model_info.csv) | Final model parameters and metrics for *Capstone Two*. | ✔️ |
+| 20.4 | [Final Presentation](/Capstone%20Two/Report/capstone_two_audl_slides.pdf) | *in progress* |
 
 ## Capstone Three
