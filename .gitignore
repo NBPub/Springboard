@@ -1,10 +1,12 @@
 */.ipynb_checkpoints
+*/.~lock.*
 Capstone Two/venv/
 Capstone Two/notes.txt
 Capstone Two/final_model.joblib
 Capstone Two/model_files/
 Capstone Two/logs.log
 Capstone Two/report_outline.odt
+Capstone Two/report_draft.odt
 Capstone Two/catboost_info/
 Capstone Two/planning notebooks/
 Capstone Two/graphs/EDA/pairplots/

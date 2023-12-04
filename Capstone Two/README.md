@@ -2,15 +2,23 @@
 
 ## Contents
 
- 1. [Project Proposal](/Capstone%20Two/propsal.pdf)
+ - [Submissions](#Submissions)
+ - [Overview](#Overview)
+   - [Python Environment]()
+   - [Project Brief]()
+   - [Selected Graphs]()
+
+### Submissions
+
+ 1. [Project Proposal](/Capstone%20Two/7.1_Project%20Propsal.pdf)
  2. [Data Wrangling Notebook](/Capstone%20Two/7.6_Wrangling.ipynb)
  3. [EDA Notebook](/Capstone%20Two/11.6_EDA.ipynb)  | [Outlier Detection](/Capstone%20Two/11.6_EDA_outlier-detection.ipynb) *actual assignment is "11.5"*
  4. [Preprocessing Notebook](/Capstone%20Two/16.3_Preprocessing-Training.ipynb)
  5. [Modeling Notebook](/Capstone%20Two/18.3_Modeling.ipynb)
  6. [Project Report](/Capstone%20Two/Report)
-	- [slides](/Capstone%20Two/Report/slides.pdf)
-	- [report](/Capstone%20Two/Report/report.pdf)
-	- [model metrics](/Capstone%20Two/Report/final_model.csv)
+	- [slides](/Capstone%20Two/Report/capstone_two_audl_slides.pdf)
+	- [report](/Capstone%20Two/Report/capstone_two_audl_report.pdf)
+	- [model metrics](/Capstone%20Two/final_model_info.csv)
    
 **| [Data Folder](/Capstone%20Two/data/) | [Graphs Folder](/Capstone%20Two/graphs/) |**
 
@@ -21,25 +29,28 @@
  - numpy
  - requests
  - scikit-learn
+ - catboost
+ - xgboost
+ - lightgbm
  - scipy
  - matplotlib
  - seaborn
  - plotly
  - pyarraow
  - tqdm
- - ydata_profiling
+ - *separate environment used for PyCaret*
  
-### PyCaret Virtual Environment
+#### PyCaret Virtual Environment
 
 See [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of packages installed in my venv for Pycaret. Fresh installation without requirements file recommended.
  
    
-## Overview
+### Overview
 
 . . .
 
 
-### Selected Graphs
+#### Selected Graphs
 
 <details><summary>Data Cleaning</summary>
 
