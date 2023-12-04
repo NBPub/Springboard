@@ -3,10 +3,8 @@
 ## Contents
 
  - [Submissions](#Submissions)
- - [Overview](#Overview)
-   - [Python Environment]()
-   - [Project Brief]()
-   - [Selected Graphs]()
+ - [Python Environment](#python-environment--310-311)
+ - [Project Overview](#Overview)
 
 ### Submissions
 
@@ -24,6 +22,8 @@
 
 ### Python Environment | 3.10, 3.11
 
+<details><summary>show</summary>
+
 **Packages**
  - pandas 
  - numpy
@@ -39,20 +39,37 @@
  - pyarraow
  - tqdm
  - *separate environment used for PyCaret*
- 
-#### PyCaret Virtual Environment
+   - [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of packages installed in my venv for Pycaret
+   - fresh installation without requirements file recommended
 
-See [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of packages installed in my venv for Pycaret. Fresh installation without requirements file recommended.
+</details>
+
  
    
 ### Overview
 
-. . .
+*see the [report](/Capstone%20Two/Report/capstone_two_audl_report.pdf) for more details*
 
+**Background**
+ - American Ultimate Disc League (AUDL) is a men’s professional Ultimate Frisbee league established 2013 in North America, currently consisting of 24 teams across four regional divisions
+ - use the most basic game summary statistics to predict the outcome of the game: the winning team and the difference in the two teams’ scores
+   - final models should provide a basis for understanding the remaining summary statistics
+   - data pipeline should exemplify collecting, cleaning, and exploring AUDL data for future studies.
+   
+**Data Collection**
+ - data collected via AUDL API [docs](https://www.docs.audlstats.com/)
+   - official endpoint for game lists, [all games 2011-2023](https://www.backend.audlstats.com/api/v1/games?date=2011:2023)
+   - unofficial endpoint for game summaries, [example game](https://www.backend.audlstats.com/web-api/game-stats?gameID=2023-05-19-LA-SLC)
+   
+**Data Cleaning**
+ - some 0 values are real, some indicate missing data 
+ - newer statistics (redzone, hucks) not recorded until midway through 2020
+ - *bring in list of checks from EDA notebook?*
+ - Remaining Questions
+   - blocks vs turnovers vs incompletions
+   - *bring in more from EDA notebook*
 
-#### Selected Graphs
-
-<details><summary>Data Cleaning</summary>
+<details><summary>Data Cleaning graphs</summary>
 
 <br>**Feature Distributions after data collection**<br>
 ![Initial](/Capstone%20Two/graphs/data_cleaning/initial_distributions.png "Feature distributions after data collection") 
@@ -60,8 +77,16 @@ See [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of
 ![Final](/Capstone%20Two/graphs/data_cleaning/clean_1_distributions.png "Feature distributions after data cleaning") 
 
 </details>
-
-<details><summary>EDA - Feature Distributions and Relationships</summary>
+ 
+**Features**
+ - only basic stats used for modeling: **throws, completions, blocks, turnovers**
+ - used to engineer additional Features
+   - completion rate, completion rate difference, block-turnover difference
+ - target features used the final score for definition
+   - **home margin** = `home_score - away_score`
+   - **home win** = `if home_score > away_score`
+   
+<details><summary>EDA graphs</summary>
 
 <br>**Feature Distributions, relation to Home Margin**<br>
 ![Distribution, Margin](/Capstone%20Two/graphs/EDA/hist_vs_margin.png "Features vs home margin") 
@@ -70,10 +95,6 @@ See [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of
 <br>**Feature+Target Correlations**<br>
 ![Correlation](/Capstone%20Two/graphs/EDA/corr_heatmap.png "Correlation Heat Map") 
 
-</details>
-
-<details><summary>Automated Outlier Detection</summary>
-
 *see more thresholds and outlier detection based on PCA components in [folder](/Capstone%20Two/graphs/Outlier%20Detection)*
 
 <br>**Isolation Forest**<br>
@@ -81,29 +102,35 @@ See [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of
 <br>**Local Outlier Factor**<br>
 ![Local Outlier Factor](/Capstone%20Two/graphs/Outlier%20Detection/engineered%20features/LocalOutlierFactor_0.05.png "Local Outlier Factor - outlier detection") 
 
-
 </details>
 
-<details><summary>Preprocessing</summary>
+**Modeling**
+ - separate studies for each target, separated into two notebooks
+ - PyCaret used to streamline initial studies, scikit-learn + manual loops were then used to evaluate and train final models
+ - **Regression for Margin**
+   - CatBoost, GBR, XGB (tree), kNN all performed well. Voting Regressor blend of first two selected for final model
+ - **Binary Classification for Home win**
+   - kNN, Extra Trees, SGD, CatBoost classifiers all performed well. kNN selected for final model.
 
-<br>**Linear Model Feature Selection**<br>
-![feature selection](/Capstone%20Two/graphs/PreProc/linear-models_feature-selection-zoomed.png "various linear models performance vs number of features selected") 
-<br>**Model Selection after HyperParameter Tuning**
-![model selection](/Capstone%20Two/graphs/PreProc/model-selection_RMSE-vs-MAE.png "Tuned model metrics") 
-
-</details>
-
-<details><summary>Final Model</summary>
+<details><summary>Regression Model graphs</summary>
 
 <br>**Predicted vs Actual Home Margin**<br>
+![residuals_1](/Capstone%20Two/graphs/Model/model-selection_RMSE-vs-MAE.png "Model evaluation by RMSE, R2, MAE") 
+<br>**Predicted vs Actual Home Margin**<br>
 ![residuals_1](/Capstone%20Two/graphs/Model/final_predicted-vs-actual.png "Predicted Home Margin vs Actual Home Margin") 
-<br>**Residuals vs Season**<br>
-![residuals_2](/Capstone%20Two/graphs/Model/final_residual-by-year.png "Residuals by season") 
-<br>**Residuals vs Home/Away Teams**<br>
-![residuals_3](/Capstone%20Two/graphs/Model/final_residual-by-team.png "Resiudals by home/away team")
+<br>**Feature Importance**<br>
+![residuals_2](/Capstone%20Two/graphs/Model/feature_importance.png "Final model's component feature importances") 
 
 </details>
 
+
+**Future Work**
+ - repeat efforts with team and matchup specific models
+   - predict current model's inputs --> predict winning team and score difference?
+ - data expansion: game events + player data + position data 
+   - established detailed game record collection + persistence
+   - frame many other studies from this collection
+ 
 
 
 
