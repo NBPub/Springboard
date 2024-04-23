@@ -39,9 +39,11 @@
 | 16.2 | [`featuretools` Automated Feature Engineering](/) | [Tutorial](https://github.com/alteryx/predict-customer-churn/tree/master) notebook for **[featuretools](https://github.com/alteryx/featuretools)** package, customer *churn* prediction from Kaggle [dataset](https://www.kaggle.com/c/kkbox-churn-prediction-challenge/data)  | ✔️ |
 | 18.2 | [Grid Search with kNN](/18.2.4%20kNN%20Grid%20Search/GridSearchKNN_Case_Study.ipynb) | Brief hyperparameter tuning example using nearest neighbors and random forest models.  | ✔️ |
 | 18.2 | [Bayesian Optimization](/18.2.6%20Bayesian%20Optimization/Bayesian_optimization_case_study.ipynb) | Bayesian optimization (package) for hyperparameter tuning, LightGBM and CatBoost models. | ✔️ |
-| 20.3 | [Storytelling](/20.3.2%Dataset%Story/Story.ipynb) | Choose dataset, explore, build a narritve: **NFL QB Draft Picks since 1990** | *in progress* |
+| 20.3 | [Storytelling](/20.3.2%Dataset%Story/Story.ipynb) | Choose dataset, explore, build a narritve: **NFL QB Draft Picks since 1990** | ✔️ |
 | 21.1 | [Time Series Analysis, ARIMA model](/21.1.2%20Time%20Series%20Analysis_CowboyCigarettes/Cowboy%20Cigarettes%20Case%20Study%20-%20Tier%203.ipynb) | Case study forecasting sales data using ARIMA. | ✔️ |
 | 25.2 | [PySpark, Databricks Exercises](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3047528175824667/1554603962728198/5866498542742602/latest.html) | examples interacting with data and fitting models | ✔️ |
+| 27.2 | [Data Analysis Interview Take Home Challenge](/27.2.2%20Take%20Home%20Challenge/submission.ipynb) | Choose dataset, explore, build a narritve: **NFL QB Draft Picks since 1990** | *submitted* |
+
 
 
 ## Capstone Two
