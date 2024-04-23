@@ -40,8 +40,8 @@ Users are "retained" if they took a ride within the previous 30 days.
  - final model: tuned GradientBoostingClassifier
  
  
-![model selection]("https://raw.githubusercontent.com/NBPub/Springboard/main/27.2.2%20Take%20Home%20Challenge/model_selection_CV.png")
+![model selection](./model_selection_CV.png)
 
-![final model results]("https://raw.githubusercontent.com/NBPub/Springboard/main/27.2.2%20Take%20Home%20Challenge/final_model_results.png")
+![final model results](./final_model_results.png)
 
-![feature importance, sample predictions]("https://raw.githubusercontent.com/NBPub/Springboard/main/27.2.2%20Take%20Home%20Challenge/results_interpretation_table_img.png")
+![feature importance, sample predictions](./results_interpretation_table_img.png)
