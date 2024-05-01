@@ -42,7 +42,7 @@
 | 20.3 | [Storytelling](/20.3.2%Dataset%Story/Story.ipynb) | Choose dataset, explore, build a narritve: **NFL QB Draft Picks since 1990** | ✔️ |
 | 21.1 | [Time Series Analysis, ARIMA model](/21.1.2%20Time%20Series%20Analysis_CowboyCigarettes/Cowboy%20Cigarettes%20Case%20Study%20-%20Tier%203.ipynb) | Case study forecasting sales data using ARIMA. | ✔️ |
 | 25.2 | [PySpark, Databricks Exercises](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3047528175824667/1554603962728198/5866498542742602/latest.html) | examples interacting with data and fitting models | ✔️ |
-| 27.2 | [Take Home One](/27.2.2%20Take%20Home%20Challenge/submission.ipynb) | Three part take home challenge. Timeseries, experiment design, and classification modeling. | *submitted* |
+| 27.2 | [Take Home One](/27.2.2%20Take%20Home%20Challenge/submission.ipynb) | Three part take home challenge. Timeseries, experiment design, and classification modeling. | ✔️ |
 | 27.2 | [Take Home Two](/27.2.3%20Take%20Home%20Two/submission.ipynb) | Classification modeling, data analysis and discussion. | *submitted* |
 
 

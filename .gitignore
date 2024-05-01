@@ -5,8 +5,11 @@ Capstone Two/notes.txt
 Capstone Two/final_model.joblib
 Capstone Two/model_files/
 Capstone Two/logs.log
+Capstone Two/Cleaning_Model_testing.ipynb
 Capstone Two/report_outline.odt
+Capstone Two/report_draft_old.odt
 Capstone Two/report_draft.odt
+Capstone Two/report_draft.pdf
 Capstone Two/catboost_info/
 Capstone Two/planning notebooks/
 Capstone Two/graphs/EDA/pairplots/
@@ -17,3 +20,5 @@ Capstone Two/graphs/EDA/plotly*
 8.3.3 SQL Case Study/files/sqlite_db_pythonsqlite.db
 14.x Model Review with Titanic
 14.x Classification Study
+21.1.2 Time Series Analysis_CowboyCigarettes/Solution.ipynb
+20.3.2 Dataset Story/graphs/performance_vs_pick2.png
