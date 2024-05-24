@@ -8,17 +8,17 @@
 
 ### Submissions
 
- 1. [Project Proposal](/Capstone%20Two/7.1_Project%20Propsal.pdf)
- 2. [Data Wrangling Notebook](/Capstone%20Two/7.6_Wrangling.ipynb)
- 3. [EDA Notebook](/Capstone%20Two/11.6_EDA.ipynb)  | [Outlier Detection](/Capstone%20Two/11.6_EDA_outlier-detection.ipynb) *actual assignment is "11.5"*
- 4. [Preprocessing Notebook](/Capstone%20Two/16.3_Preprocessing-Training.ipynb)
- 5. [Modeling Notebook](/Capstone%20Two/18.3_Modeling.ipynb) | [Classification Notebook](/Capstone%20Two/18.3_Modeling_Classification.ipynb)
- 6. [Project Report](/Capstone%20Two/Report)
-	- [slides](/Capstone%20Two/Report/capstone_two_audl_slides.pdf)
-	- [report](/Capstone%20Two/Report/capstone_two_audl_report.pdf)
-	- [model metrics](/Capstone%20Two/final_model_info.csv)
+ 1. [Project Proposal](./7.1_Project%20Propsal.pdf)
+ 2. [Data Wrangling Notebook](./7.6_Wrangling.ipynb)
+ 3. [EDA Notebook](./11.6_EDA.ipynb)  | [Outlier Detection](./11.6_EDA_outlier-detection.ipynb) *actual assignment is "11.5"*
+ 4. [Preprocessing Notebook](./16.3_Preprocessing-Training.ipynb)
+ 5. [Modeling Notebook](./18.3_Modeling.ipynb) | [Classification Notebook](./18.3_Modeling_Classification.ipynb)
+ 6. Project Documentation
+	- [slides](./slides.pdf)
+	- [report](./report.pdf)
+	- [model metrics](./final_model_info.csv)
    
-**| [Data Folder](/Capstone%20Two/data/) | [Graphs Folder](/Capstone%20Two/graphs/) |**
+**| [Data Folder](.data/) | [Graphs Folder](./graphs/) |**
 
 ### Python Environment | 3.10, 3.11
 
@@ -39,7 +39,7 @@
  - pyarraow
  - tqdm
  - *separate environment used for PyCaret*
-   - [pycaret_requirements](/Capstone%20Two/pycaret_requirements.txt) for list of packages installed in my venv for Pycaret
+   - [pycaret_requirements](./pycaret_requirements.txt) for list of packages installed in my venv for Pycaret
    - fresh installation without requirements file recommended
 
 </details>
@@ -47,8 +47,6 @@
  
    
 ### Overview
-
-*see the [report](/Capstone%20Two/Report/capstone_two_audl_report.pdf) for more details*
 
 **Background, Problem Statement**
  - American Ultimate Disc League (AUDL) is a men’s professional Ultimate Frisbee league established 2013 in North America, currently consisting of 24 teams across four regional divisions
@@ -64,10 +62,8 @@
 **Data Cleaning**
  - some 0 values are real, some indicate missing data 
  - newer statistics (redzone, hucks) not recorded until midway through 2021
- - *bring in list of checks from EDA notebook?*
- - Remaining Questions
-   - blocks vs turnovers vs incompletions
-   - *bring in more from EDA notebook*
+ - see [report](./report.pdf) appendix for detailed data checks
+ - still unsure of: blocks vs turnovers vs incompletions
 
 <details><summary>Data Cleaning graphs</summary>
 
@@ -109,7 +105,7 @@
  - PyCaret used to streamline initial studies, scikit-learn + manual loops were then used to evaluate and train final models
    - final hyperparameter tuning with RandomizedSearch, [help with distributions](https://nbpub.pythonanywhere.com/)
  - **Regression for Margin**
-   - CatBoost, GBR, XGB (tree based boosting), kNN all performed well. Voting Regressor blend of first two selected for final model
+   - CatBoost, GBR, XGB (tree based boosting), kNN all performed well. Voting Regressor blend of CatBoost+GBR selected for final model
      - residuals analyzed and shown below. two worst errors were games with faulty records that should have been removed during cleaning.
  - **Binary Classification for Home win**
    - kNN, Extra Trees, SGD, CatBoost classifiers all performed well. kNN selected for final model
@@ -119,11 +115,11 @@
 <details><summary>Regression Model graphs</summary>
 
 <br>**Tuned Model Selection**<br>
-![residuals_1](/Capstone%20Two/graphs/Model/model-selection_RMSE-vs-MAE.png "Model evaluation by RMSE, R2, MAE") 
+![model_selection](/Capstone%20Two/graphs/Model/model-selection_RMSE-vs-MAE.png "Model evaluation by RMSE, R2, MAE") 
 <br>**Predicted vs Actual Home Margin**<br>
-![residuals_1](/Capstone%20Two/graphs/Model/final_predicted-vs-actual.png "Predicted Home Margin vs Actual Home Margin") 
+![residuals_1](/Capstone%20Two/graphs/Model/residual%20analysis/final_predicted-vs-actual.png "Predicted Home Margin vs Actual Home Margin") 
 <br>**Feature Importance**<br>
-![residuals_2](/Capstone%20Two/graphs/Model/feature_importance.png "Final model's component feature importances") 
+![feature_importance](/Capstone%20Two/graphs/Model/feature_importance.png "Final model's component feature importances") 
 
 </details>
 
