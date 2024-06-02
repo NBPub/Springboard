@@ -57,7 +57,7 @@
 | 18.3 | [Modeling](/Capstone%20Two/18.3_Modeling.ipynb) | Notebook containing initial modeling steps and descriptions.  | ✔️ |
 | 20.4 | [Final Report](/Capstone%20Two/report.pdf) | Final report for *Capstone Two*. [Brief summary](/Capstone%20Two#Overview)  | ✔️ |
 | 20.4 | [Final Model](/Capstone%20Two/final_model_info.csv) | Final model parameters and metrics for *Capstone Two*. | ✔️ |
-| 20.4 | [Final Presentation](/Capstone%20Two/slides.pdf) | ✔️ |
+| 20.4 | [Final Presentation](/Capstone%20Two/slides.pdf) | Final slides for *Capstone Two*. | ✔️ |
 
 ## Capstone Three
 
