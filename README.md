@@ -43,20 +43,28 @@
 | 21.1 | [Time Series Analysis, ARIMA model](/21.1.2%20Time%20Series%20Analysis_CowboyCigarettes/Cowboy%20Cigarettes%20Case%20Study%20-%20Tier%203.ipynb) | Case study forecasting sales data using ARIMA. | ✔️ |
 | 25.2 | [PySpark, Databricks Exercises](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3047528175824667/1554603962728198/5866498542742602/latest.html) | examples interacting with data and fitting models | ✔️ |
 | 27.2 | [Take Home One](/27.2.2%20Take%20Home%20Challenge/submission.ipynb) | Three part take home challenge. Timeseries, experiment design, and classification modeling. | ✔️ |
-| 27.2 | [Take Home Two](/27.2.3%20Take%20Home%20Two/submission.ipynb) | Classification modeling, data analysis and discussion. | *submitted* |
+| 27.2 | [Take Home Two](/27.2.3%20Take%20Home%20Two/submission.ipynb) | Classification modeling, data analysis and discussion. | ✔️ |
 
 
-## Capstone Two
+## [Capstone Two](/Capstone%20Two/)
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
-| 7.1 | [Project Proposal](/Capstone%20Two/7.1_Project%20Propsal.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | ✔️ |
+| 7.1 | [Project Proposal](/Capstone%20Two/7.1_Project%20Proposal.pdf) | Final PDF of proposal after discussion and approval. Project ideas not uploaded to repository folder.  | ✔️ |
 | 7.6 | [Data Wrangling](/Capstone%20Two/7.6_Wrangling.ipynb) | Notebook containing initial data cleaning steps and descriptions.  | ✔️ |
 | 11.5 | [Exploratory Data Analysis](/Capstone%20Two/11.6_EDA.ipynb) | Notebook containing initial data exploration steps and descriptions.  | ✔️ |
 | 16.3 | [Pre-processing and Training](/Capstone%20Two/16.3_Preprocessing-Training.ipynb) | Notebook containing initial data pre-processing and model training steps and descriptions.  | ✔️ |
 | 18.3 | [Modeling](/Capstone%20Two/18.3_Modeling.ipynb) | Notebook containing initial modeling steps and descriptions.  | ✔️ |
-| 20.4 | [Final Report](/Capstone%20Two/Report/capstone_two_audl_report.pdf) | Final report for *Capstone Two*. [Brief summary](/Capstone%20Two#Overview)  | *in progress*  |
-| 20.4 | [Final Model](/Capstone%20Two/Report/final_model_info.csv) | Final model parameters and metrics for *Capstone Two*. | ✔️ |
-| 20.4 | [Final Presentation](/Capstone%20Two/Report/capstone_two_audl_slides.pdf) | *in progress* |
+| 20.4 | [Final Report](/Capstone%20Two/report.pdf) | Final report for *Capstone Two*. [Brief summary](/Capstone%20Two#Overview)  | ✔️ |
+| 20.4 | [Final Model](/Capstone%20Two/final_model_info.csv) | Final model parameters and metrics for *Capstone Two*. | ✔️ |
+| 20.4 | [Final Presentation](/Capstone%20Two/slides.pdf) | ✔️ |
 
 ## Capstone Three
+
+| Unit | Name, link | Description | Status |
+|---------|-------|-------|----------|
+| 24.4 | [Project Proposal](/Capstone%20Three/proposal.pdf) | Final PDF of proposal after discussion and approval. Based on [Kaggle PlantTraits](https://www.kaggle.com/competitions/planttraits2024/overview) competition. | ✔️ |
+| 26.2 | [Data Wrangling and EDA](/Capstone%20Three/EDA.ipynb) | Data wrangling and EDA notebook.  | *submitting* |
+| 28.1 | [Pre-processing and Modeling](/Capstone%20Three/modeling.ipynb) | Notebook containing data pre-processing and model training.  | *in progress* |
+| 28.1 | [Documentation](/Capstone%20Three/report.pdf) | Final report for *Capstone Three*  | *in progress* |
+| 28.1 | [Presentation](/Capstone%20Three/slides.pdf) | Final slides for *Capstone Three* | *in progress* |
