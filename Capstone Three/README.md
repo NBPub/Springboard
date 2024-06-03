@@ -10,13 +10,13 @@
 
 ### Submissions
 
- 1. [Project Proposal](./proposal.pdf)
- 2. [Data Wrangling, EDA]() 26.2.1
- 3. [Preprocessing, Modeling]() 28.1.1
- 4. [Documentation]() 28.1.2
-    - [report]()
-	- [slides]()
-	- [model metrics]()
+ 1. [Project Proposal](./proposal.pdf) *24.4.1*
+ 2. [Data Wrangling, EDA](./EDA.ipynb) *26.2.1*
+ 3. [Preprocessing, Modeling](./modeling.ipynb) *28.1.1*
+ 4. Documentation 
+    - [report]() *28.1.2*
+	- [slides]() *28.1.3*
+	- [model metrics]() ?
 	
 ### Python Environment
 
