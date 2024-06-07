@@ -59,12 +59,12 @@
 | 20.4 | [Final Model](/Capstone%20Two/final_model_info.csv) | Final model parameters and metrics for *Capstone Two*. | ✔️ |
 | 20.4 | [Final Presentation](/Capstone%20Two/slides.pdf) | Final slides for *Capstone Two*. | ✔️ |
 
-## Capstone Three
+## [Capstone Three](/Capstone%20Three/)
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
-| 24.4 | [Project Proposal](/Capstone%20Three/proposal.pdf) | Final PDF of proposal after discussion and approval. Based on [Kaggle PlantTraits](https://www.kaggle.com/competitions/planttraits2024/overview) competition. | ✔️ |
-| 26.2 | [Data Wrangling and EDA](/Capstone%20Three/EDA.ipynb) | Data wrangling and EDA notebook.  | *submitting* |
-| 28.1 | [Pre-processing and Modeling](/Capstone%20Three/modeling.ipynb) | Notebook containing data pre-processing and model training.  | *in progress* |
-| 28.1 | [Documentation](/Capstone%20Three/report.pdf) | Final report for *Capstone Three*  | *in progress* |
-| 28.1 | [Presentation](/Capstone%20Three/slides.pdf) | Final slides for *Capstone Three* | *in progress* |
+| 24.4.1 | [Project Proposal](/Capstone%20Three/proposal.pdf) | Final PDF of proposal after discussion and approval. Based on [Kaggle PlantTraits](https://www.kaggle.com/competitions/planttraits2024/overview) competition. | ✔️ |
+| 26.2.1 | [Data Wrangling and EDA](/Capstone%20Three/26.2.1%20Data%20Wrangling%20and%20EDA.ipynb) | Data wrangling and EDA notebook.  | *submitting* |
+| 28.1.1 | [Pre-processing and Modeling](/Capstone%20Three/28.1.1%20Preprocessing%20and%20Modeling.ipynb) | Notebook containing data pre-processing and model training.  | *submitting* |
+| 28.1.2 | [Documentation](/Capstone%20Three/report.pdf) | Final report for *Capstone Three*  | *in progress* |
+| 28.1.3 | [Presentation](/Capstone%20Three/slides.pdf) | Final slides for *Capstone Three* | *in progress* |

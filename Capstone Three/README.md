@@ -5,22 +5,27 @@
 ## Contents
 
  - [Submissions](#Submissions)
- - [Environment Notes](#Python-Environment)
  - [Project Overview](#Project-Overview)
+ - [Data]()
+   - [images](#Images)
+   - [geodata](#Geodata)
+   - [plant trait targets](#Plant-trait-targets)
+ - [Preprocessing](#Preprocessing)
+ - [Modeling](#Modeling)
+ - [Outcomes](#Outcomes)
+ - [Environment Notes](#Kaggle-Notebook-Environment)
 
 ### Submissions
 
  1. [Project Proposal](./proposal.pdf) *24.4.1*
- 2. [Data Wrangling, EDA](./EDA.ipynb) *26.2.1*
- 3. [Preprocessing, Modeling](./modeling.ipynb) *28.1.1*
+ 2. [Data Wrangling, EDA](./26.2.1%20Data%20Wrangling%20and%20EDA.ipynb) *26.2.1*
+ 3. [Preprocessing, Modeling](./28.1.1%20Preprocessing%20and%20Modeling.ipynb) *28.1.1*
  4. Documentation 
-    - [report]() *28.1.2*
-	- [slides]() *28.1.3*
-	- [model metrics]() ?
+    - [report](./report.pdf) *28.1.2*
+	- [slides](./slides.pdf) *28.1.3*
+	- [model metrics](./model_metrics.csv)
 	
-### Python Environment
 
-*notes about Kaggle vs home environment*, DirectML, tensorflow versions
 
 ### Project Overview
 
@@ -36,24 +41,31 @@
  - establish suitable evaluation metric for multi-output regression
  - final model should consider complexity and training time in addition to accuracy
  
-#### Data
+### Data
 
-##### Images
+#### Images
 
-##### Geodata
-
-
-##### Plant trait targets
+#### Geodata
 
 
-#### Preprocessing
+#### Plant trait targets
+
+
+### Preprocessing
 
 - data cleaning, outlier detection
 - feature normalization
 - target transformation
 
-#### Modeling
+### Modeling
 
-#### Outcomes
+### Outcomes
+
+
+### Kaggle Notebook Environment
+
+*my local setup requires DirectML for GPU + Tensorflow (v 1.15), so most GPU accelerated training occured within Kaggle notebooks. see environment description in file below.*
+
+[Kaggle `pip freeze`](./kaggle_notebook_environment.txt)
 
 

@@ -1,0 +1,4 @@
+Model,Time (min),Mean Absolute Error,LogCosh error
+CatBoost,0.65,263,263
+MobileNetV2,45,212,212
+InceptionResNetV2,124,192,192
