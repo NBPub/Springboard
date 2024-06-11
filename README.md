@@ -1,6 +1,6 @@
 # Springboard Data Science Submissions
 
-*Submissions for Springboard Data Science curriculum.*
+*Submissions for **COMPLETED** Springboard Data Science curriculum.*
 
  - [Submissions](#Submissions)
    - *[Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone) (external repo)*
@@ -64,7 +64,7 @@
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
 | 24.4.1 | [Project Proposal](/Capstone%20Three/proposal.pdf) | Final PDF of proposal after discussion and approval. Based on [Kaggle PlantTraits](https://www.kaggle.com/competitions/planttraits2024/overview) competition. | ✔️ |
-| 26.2.1 | [Data Wrangling and EDA](/Capstone%20Three/26.2.1%20Data%20Wrangling%20and%20EDA.ipynb) | Data wrangling and EDA notebook.  | *submitting* |
-| 28.1.1 | [Pre-processing and Modeling](/Capstone%20Three/28.1.1%20Preprocessing%20and%20Modeling.ipynb) | Notebook containing data pre-processing and model training.  | *submitting* |
-| 28.1.2 | [Documentation](/Capstone%20Three/report.pdf) | Final report for *Capstone Three*  | *in progress* |
-| 28.1.3 | [Presentation](/Capstone%20Three/slides.pdf) | Final slides for *Capstone Three* | *in progress* |
+| 26.2.1 | [Data Wrangling and EDA](/Capstone%20Three/26.2.1%20Data%20Wrangling%20and%20EDA.ipynb) | Data wrangling and EDA notebook.  | ✔️ |
+| 28.1.1 | [Pre-processing and Modeling](/Capstone%20Three/28.1.1%20Preprocessing%20and%20Modeling.ipynb) | Notebook containing data pre-processing and model training.  | ✔️ |
+| 28.1.2 | [Documentation](/Capstone%20Three/report.pdf) | Final report for *Capstone Three*  | ✔️ |
+| 28.1.3 | [Presentation](/Capstone%20Three/slides.pdf) | Final slides for *Capstone Three* | ✔️ |
