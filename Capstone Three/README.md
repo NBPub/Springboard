@@ -9,13 +9,16 @@
  - [Data]()
    - [images](#Images)
    - [geodata](#Geodata)
+     - [feature engineering](#Feature-Engineering)
    - [plant trait targets](#Plant-trait-targets)
- - [Preprocessing](#Preprocessing)
+ - [Preprocessing](#Preprocessing-Summary)
  - [Modeling](#Modeling)
  - [Outcomes](#Outcomes)
  - [Environment Notes](#Kaggle-Notebook-Environment)
+ 
+---
 
-### Submissions
+## Submissions
 
  1. [Project Proposal](./proposal.pdf) *24.4.1*
  2. [Data Wrangling, EDA](./26.2.1%20Data%20Wrangling%20and%20EDA.ipynb) *26.2.1*
@@ -25,9 +28,9 @@
 	- [slides](./slides.pdf) *28.1.3*
 	- [model metrics](./model_metrics.csv)
 	
+---
 
-
-### Project Overview
+## Project Overview
 
 **[Kaggle Competition](https://www.kaggle.com/competitions/planttraits2024/overview)** | 
 **[FGVC Workshop](https://sites.google.com/view/fgvc11/)** | 
@@ -40,13 +43,15 @@
  - use training dataset only
  - establish suitable evaluation metric for multi-output regression
  - final model should consider complexity and training time in addition to accuracy
-   - Convolutional Neural Networks were focus of my exploration
+   - Convolutional Neural Networks were focus for this project
+   
+---
  
-### Data
+## Data
 
-The key data challenge for this project is data cleaning. Not all plant trait targets are reasonable values, and should be removed before training models.
+The key challenge for this project is data cleaning. Not all plant trait targets are reasonable values, and should be removed before model training.
 
-**Source Summary** [project data descriptions](https://www.kaggle.com/competitions/planttraits2024/data)
+**Source Summary** | *[project data descriptions](https://www.kaggle.com/competitions/planttraits2024/data)*
 | Description | Notes | Link |
 |-------------|-------|------|
 | Plant images | 512x512 RBG images, collected from iNaturalist. Citizen science! | [iNaturalist](https://www.inaturalist.org/) |
@@ -57,7 +62,7 @@ The key data challenge for this project is data cleaning. Not all plant trait ta
  - 6:2:2 split for training, validation, and hold-out testing
 
 
-#### Images
+### Images
 
  - 512x512x3 photographs from "citizen scientists"
    - downsized to default image size for transferred CNN architectures
@@ -65,15 +70,16 @@ The key data challenge for this project is data cleaning. Not all plant trait ta
  - variety of styles, compositions
  - used to determine cutoffs for plant trait outlier cleaning
  
-<details><summary>Plant Height threshold example `X18_mean`</summary>
+<details><summary>Plant Height threshold example</summary>
 
+`X18_mean` --> cutoff after `150`
 ![X18 Clean](./graphs/target%20outliers/images/X18_mean_height_thresh%3D150.png "Plant images with increasing reported Height") 
  
 </details> 
 
-#### Geodata
+### Geodata
 
-Data given for each sample, based on photograph's locatation. Seasonal features engineered to replace monthly means for Satellite and RADAR measurements. 
+Data was provided for each sample, based on a photograph's locatation. Seasonal features were engineered to replace monthly means for Satellite and RADAR measurements. 
 Each feature group was independently decomposed via PCA to achieve 21 total PCA components from 163 ingoing features. Features were z-score normalized prior to PCA decomposition.
 
  - **[WORLDCLIM](https://www.worldclim.org/data/bioclim.html)** describes climate and precipitation, *6 features*
@@ -82,18 +88,18 @@ Each feature group was independently decomposed via PCA to achieve 21 total PCA 
  - **[Satellite](https://modis.gsfc.nasa.gov/data/dataprod/Rrs.php)** describes sun exposure, measured at five different frequency bands, *60 features*
  - **RADAR** describes atmospheric water content and plant biomass, measured at 3 different frequency bands, *36 features*
    - [reference](https://lotusarise.com/satellite-frequency-bands-upsc/)
- 
-##### Feature Engineering
+
+#### Feature Engineering
 
 I referenced the seasonality definitions for the **WORLDCLIM** features to engineer features for the satellite and radar measurements. Each measurement's 12 monthly means were reduced to:
  - annual mean = sum of months / months
- - annual delta = max masurement - min measurement
+ - annual delta = max monthly masurement - min monthly measurement
  - seasonality = monthly standard deviation / annual mean
 
 These engineered features were used for the subsequent PCA decomposition.
 
 
-#### Plant trait targets
+### Plant trait targets
 
 The six targets for regression were:
 
@@ -109,8 +115,9 @@ The following shows histograms for each plant trait before cleaning, after clean
 
 ![Trait Histograms](./graphs/target%20outliers/final_clean_compare.png "Plant Trait targets")
 
+---
 
-### Preprocessing Summary
+## Preprocessing Summary
 
 1. Remove samples with negative targets. Outlier detection and cleaning of plant trait targets.
 Remove based on visual assessment upper-bound cutoffs, then based on deviance.
@@ -125,26 +132,32 @@ transformation will only be fit to the training set, then applied to both sets.
 
 Traits were inverse-transformed prior to residual analysis. The box plots below show the trait distributions for the training, validation, and hold-out testing sets.
 
+<details><summary>Target Stratification checks</summary>
+
 *Power Transformed*
 ![Trait Distributions transformed](./graphs/target%20outliers/final_distributions.png "Plant Trait targets transformed")
 
 *Raw Values*
 ![Trait Distributions](./graphs/target%20outliers/final_distributions_raw.png "Plant Trait targets raw")
 
-### Modeling
+</details> 
 
-The method outlined in the reference [paper](https://www.nature.com/articles/s41598-021-95616-0)) was loosely followed for modeling efforts. 
+---
+
+## Modeling
+
+The method outlined in the reference [paper](https://www.nature.com/articles/s41598-021-95616-0) was loosely followed for modeling efforts. 
 Given the computational cost and training time for the large dataset, experiments were focused on broad model parameters.
 This project can serve as a template for future work and model performance should be easily improved. Some findings are listed below:
 
  - *transformer models showed promise for other Kaggle competitors but were not used for this project. I focused on CNNs*
    - [first place solution](https://www.kaggle.com/competitions/planttraits2024/discussion/510393)
- - Mean Absolute Error suitable metric for transformed targets. LogCosh best for raw targets, where some traits span a much greater range of magnitudes.
+ - Mean Absolute Error was suitable metric for transformed targets. LogCosh was best for raw targets, where some traits span a much greater range of magnitudes.
    - LogCosh used as Loss function.
- - utilizing [existing architectures](https://keras.io/api/applications/) much better than a simple CNN
-   - experimented with most models available through Keras, linked above
+ - utilizing [existing architectures](https://keras.io/api/applications/) for plant image feature extraction much better than a simple CNN
+   - experimented with most models available through Keras
  - MobileNetV2 and InceptionResNetV2 gave best performance
-   - MobileNetV2 had much faster training and lower complexity and default image resolution allowed larger batch sizes for training
+   - MobileNetV2 trained much faster, and its lower complexity and default image resolution allowed for larger batch sizes
    - reference paper used InceptionResNetV2
  - fully retraining transferred architecture weights more accurate than using ImageNet weights. Same training duration.
  - dynamic resizing layer better than resizing during dataset generation
@@ -158,8 +171,8 @@ The schematic below shows the final model scheme, which utilized [MobileNetV2](h
 
 ![Final Model Schematic](./model_schematic_annotated.png "MobileNetV2 combined model")
 
-The final model contains two "data streams". One for the plant images, which contains a learnable resizing layer, image augmentation layers, amd featire extraction via MobileNetV2. 
-The other simply takes the processed geodata as an input. These features are concatenated and then fed into fully connected dense layers for plant trait prediction.
+The final model contains two "data streams". One for the plant images, which contains a learnable resizing layer, image augmentation layers, amd feature extraction via MobileNetV2. 
+The other takes the processed geodata as an input. These streams are concatenated and then fed into fully connected dense layers for plant trait prediction.
 
 
 <details><summary>Model Training Histories</summary>
@@ -172,7 +185,7 @@ The other simply takes the processed geodata as an input. These features are con
  
 </details> 
 
-
+---
 
 ### Outcomes
 
@@ -188,15 +201,19 @@ study and understand our ecosystem in real time. Plants are important biomarkers
 ecosystems, meaning they be used as a proxy to measure broader environmental health and conditions.
 
 
-**Hold Out Test Scores** *included CatBoost for geodata only model reference*
+**Hold Out Test Scores** 
+
+*included CatBoost for geodata only model reference*
 
 | Metric   | MobileNet | IncResNet | CatBoost |
 | -------- | --------- | --------- | -------- |
 | MAE      |    212    | 192       | 263      |
 | LogCosh  |    212    | 192       | 263      | 
-| Time     | 45 mins   | 124 mins  | 40s      |
+| **Time   | 45 mins   | 124 mins  | 40s**    |
+| Batch size | 256      | 64        | N/A     |
+| Image Resolution | 224x224 | 299x299 | N/A  |
 
-Residuals were anlayzed for each trait, and specific predictions were assessed with the associated images.
+Residuals were anlayzed for each trait, and specific predictions were assessed with the [associated images](./graphs/residual%20analysis/plant_images).
 
 ![Final Model Residuals](./graphs/residual%20analysis/MobileNet_residuals.png "MobileNetV2 residuals")
 
@@ -205,13 +222,16 @@ Predictions may also be less accurate for higher values of certain traits, could
 
 The best and worst predictions for **Leaf Area** `X3112_mean` are shown with associated plant images, below.
 
-![Worst Predictions](./graphs/residual%20analysis/plant_images/MobileNet_resid_X3112.png "Leaf area greatest residuals") 
  - over predictions on top row, under-predictions on bottom row
+![Worst Predictions](./graphs/residual%20analysis/plant_images/MobileNet_resid_X3112.png "Leaf area greatest residuals") 
 
+ - best predictions within a relatively narrow range of magnitudes?
 ![Best Predictions](./graphs/residual%20analysis/plant_images/MobileNet_resid_X3112_best.png "Leaf area lowest residuals") 
 
+---
 
-### Kaggle Notebook Environment
+
+## Kaggle Notebook Environment
 
 *my local setup requires DirectML for GPU + Tensorflow (v 1.15), so most GPU accelerated training occured within Kaggle notebooks. see environment description in file below.*
 
