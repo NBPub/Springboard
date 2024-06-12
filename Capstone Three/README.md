@@ -209,8 +209,8 @@ ecosystems, meaning they be used as a proxy to measure broader environmental hea
 | -------- | --------- | --------- | -------- |
 | MAE      |    212    | 192       | 263      |
 | LogCosh  |    212    | 192       | 263      | 
-| **Time   | 45 mins   | 124 mins  | 40s**    |
-| Batch size | 256      | 64        | N/A     |
+| Time     | 45 mins   | 124 mins  | 40s      |
+| Batch size | 256     | 64        | N/A      |
 | Image Resolution | 224x224 | 299x299 | N/A  |
 
 Residuals were anlayzed for each trait, and specific predictions were assessed with the [associated images](./graphs/residual%20analysis/plant_images).

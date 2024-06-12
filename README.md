@@ -1,20 +1,13 @@
 # Springboard Data Science Submissions
 
-*Submissions for **COMPLETED** Springboard Data Science curriculum.*
+*Submissions for **COMPLETED ✔️** Springboard Data Science curriculum.*
 
  - [Submissions](#Submissions)
    - *[Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone) (external repo)*
  - [Capstone Two](#Capstone-Two)
-   - [Project Page](/Capstone%20Two/)
+   - [Project Page](/Capstone%20Two#capstone-two---audl-win-models)
  - [Capstone Three](#Capstone-Three)
-   - [Project Page](/Capstone%20Three/)
-
-**Notes and Resources**
- - [**Python Data Science Notebook**](https://github.com/jakevdp/PythonDataScienceHandbook)
- - [**Guided Capstone**](https://github.com/NBPub/DataScienceGuidedCapstone#useful-tidbits)
- - [**Stat Book**](/10.1%20StatBookNotes)
-   - [**LI Learning**](/10.1%20StatBookNotes/LI_Learning_notes.md)
- - [**Macine Learning Notes**](/ML_Notes)
+   - [Project Page](/Capstone%20Three#planttraits2024-kaggle)
 
 ## Submissions
 
@@ -46,7 +39,7 @@
 | 27.2 | [Take Home Two](/27.2.3%20Take%20Home%20Two/submission.ipynb) | Classification modeling, data analysis and discussion. | ✔️ |
 
 
-## [Capstone Two](/Capstone%20Two/)
+## [Capstone Two](/Capstone%20Two#capstone-two---audl-win-models)
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
@@ -59,7 +52,7 @@
 | 20.4 | [Final Model](/Capstone%20Two/final_model_info.csv) | Final model parameters and metrics for *Capstone Two*. | ✔️ |
 | 20.4 | [Final Presentation](/Capstone%20Two/slides.pdf) | Final slides for *Capstone Two*. | ✔️ |
 
-## [Capstone Three](/Capstone%20Three/)
+## [Capstone Three](/Capstone%20Three#planttraits2024-kaggle)
 
 | Unit | Name, link | Description | Status |
 |---------|-------|-------|----------|
@@ -68,3 +61,12 @@
 | 28.1.1 | [Pre-processing and Modeling](/Capstone%20Three/28.1.1%20Preprocessing%20and%20Modeling.ipynb) | Notebook containing data pre-processing and model training.  | ✔️ |
 | 28.1.2 | [Documentation](/Capstone%20Three/report.pdf) | Final report for *Capstone Three*  | ✔️ |
 | 28.1.3 | [Presentation](/Capstone%20Three/slides.pdf) | Final slides for *Capstone Three* | ✔️ |
+
+
+## Other
+
+ - [**Python Data Science Notebook**](https://github.com/jakevdp/PythonDataScienceHandbook)
+ - [**Guided Capstone**](https://github.com/NBPub/DataScienceGuidedCapstone#useful-tidbits)
+ - [**Stat Book**](/10.1%20StatBookNotes)
+   - [**LI Learning**](/10.1%20StatBookNotes/LI_Learning_notes.md)
+ - [**Macine Learning Notes**](/ML_Notes)
