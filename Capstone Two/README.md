@@ -173,24 +173,25 @@
  - same process for data preparation as used for `home_margin` regression, different target variable: `home_win`
    - `home_win` is True if the home score is greater than the away score at the end of the game
      - slight home-field advantage noted, see [report](./report.pdf)
-	 - ties should not occur by game design, and two existed in the dataset. they were treated as losses: `home_win=False`
+	 - ties should not occur by game design, but two existed in the dataset. they were treated as losses: `home_win=False`
  - tested a wide variety of classifcation models, **progressed kNN, SGD, and ExtraTrees classifiers** for hyperparameter tuning and final comparison
    - determined feature selection (`SelectKBest`) and normalization conditions for linear and kNN models
    - did not employ feature selection for ensemble model
-   - training and testing scores similar for all models, SGD may be [overfitting slightly](/Capstone%20Two/graphs/Model/classification/overfitting_check.png)
+   - training and testing scores similar for all models, SGD may be [overfitting slightly](/Capstone%20Two/graphs/Model/classification/selection/overfitting_check.png)
  - kNN better recall, but worse precision than ExtraTrees and SGD classifiers. kNN higher in aggregate scores: F1, Balanaced Accuracy, ROC-AUC
    - in more words, kNN better at home wins correctly but worse at predicting home losses
  - Voting/Stacking used to blend final three models (tuned) and CatBoost classifier (untuned)
    - kNN + CatBoost + ExtraTrees blend (`VotingClassifier`) may provide improvement over kNN or ExtraTrees alone
+   - *all blends shown on table are VotingClassifiers with equal model weights*
    
    
 | Model | precision | recall | F1 | Balanced Accuracy | ROC-AUC |
 |-------|-----------|--------|----|-------------------|---------|
-|KNeighborsClassifier|	0.949|	0.943|	0.946|	0.937	|0.937|
-|kNN+Cat+ET|	0.954	|0.938	|0.946	|0.938|	0.938|
+|KNeighborsClassifier|	0.949|	**0.943**|	**0.946**|	0.937	|0.937|
+|kNN+Cat+ET|	0.954	|0.938	|**0.946**	|**0.938**|	**0.938**|
 |ExtraTreesClassifier|	0.953|	0.926|	0.939|	0.932|	0.932|
 |SGDClassifier	|0.953|	0.926	|0.939	|0.932	|0.932|
-|kNN+Cat|	0.959|	0.920|	0.939	|0.933	|0.933|
+|kNN+Cat|	**0.959**|	0.920|	0.939	|0.933	|0.933|
 |CatBoostClassifier|	0.948|	0.926	|0.937|	0.928|	0.972|
 |kNN+Cat+SGD	|0.948	|0.926	|0.937	|0.928	|0.928|
 
@@ -198,18 +199,18 @@
 <details><summary>Classification graphs</summary>
 
 <br>**Model Selection 1**<br>
-![classification_selection_1](/Capstone%20Two/graphs/Model/classification/F1-vs-ROCAUC.png "Model selection: F1 vs ROC-AUC") 
+![classification_selection_1](/Capstone%20Two/graphs/Model/classification/selection/F1-vs-ROCAUC.png "Model selection: F1 vs ROC-AUC") 
 <br>**Model Selection 2**<br>
-![classification_selection_2](/Capstone%20Two/graphs/Model/classification/recall-vs-precision.png "Model selection: Recall vs Precision") 
+![classification_selection_2](/Capstone%20Two/graphs/Model/classification/selection/recall-vs-precision.png "Model selection: Recall vs Precision") 
 <br>**Top 3 classification models: SGD, kNN, ExtraTrees**<br>
-![classification_top_1](/Capstone%20Two/graphs/Model/classification/ROC-curve.png "") 
-![classification_top_2](/Capstone%20Two/graphs/Model/classification/PR-curve.png "") 
-![classification_top_3](/Capstone%20Two/graphs/Model/classification/DET-curve.png "") 
-![classification_top_4](/Capstone%20Two/graphs/Model/classification/Calibration-curve.png "") 
-<br>
-![classification_top_5](/Capstone%20Two/graphs/Model/classification/top_3_estimator_parameters.png "") 
+![classification_top_1](/Capstone%20Two/graphs/Model/classification/ROC-curve.png "ROC curve") 
+![classification_top_2](/Capstone%20Two/graphs/Model/classification/PR-curve.png "Precision-Recall curve") 
+![classification_top_3](/Capstone%20Two/graphs/Model/classification/DET-curve.png "DET curve") 
+![classification_top_4](/Capstone%20Two/graphs/Model/classification/Calibration-curve.png "Reliability diagrams for ET, kNN") 
+<br>*tuned model parameters*
+![classification_top_5](/Capstone%20Two/graphs/Model/classification/top_3_estimator_parameters.png "tuned model hyperparameters") 
 
-[see more](/Capstone%20Two/graphs/Model/classification/)
+[see more: confusion matrices, etc. . . ](/Capstone%20Two/graphs/Model/classification/)
 
 </details>
 
