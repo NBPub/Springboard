@@ -8,7 +8,7 @@
 
 ## Submissions
 
- 1. [Project Proposal](./7.1_Project%20Propsal.pdf)
+ 1. [Project Proposal](./7.1_Project%20Proposal.pdf)
  2. [Data Wrangling Notebook](./7.6_Wrangling.ipynb)
  3. [EDA Notebook](./11.6_EDA.ipynb)  | [Outlier Detection](./11.6_EDA_outlier-detection.ipynb) *actual assignment is "11.5"*
  4. [Preprocessing Notebook](./16.3_Preprocessing-Training.ipynb)
@@ -18,7 +18,7 @@
 	- [report](./report.pdf)
 	- [model metrics](./final_model_info.csv)
    
-**| [Data Folder](.data/) | [Graphs Folder](./graphs/) |**
+**| [Data Folder](./data/) | [Graphs Folder](./graphs/) |**
 
 ## Python Environment | 3.10, 3.11
 
@@ -48,7 +48,7 @@
    
 ## Overview
 
- 1. [Background, Problem Statement](#background,-problem-statement)
+ 1. [Background, Problem Statement](#background-problem-statement)
  2. [Data Collection](#data-collection)
  3. [Data Cleaning](#data-cleaning)
  4. [EDA and Feature selection, engineering](#features)
@@ -170,13 +170,14 @@
 
 *see [Classification Notebook](./18.3_Modeling_Classification.ipynb) for details*
 
+ - results and residuals not discussed here, in general, high accuracy was achieved
  - same process for data preparation as used for `home_margin` regression, different target variable: `home_win`
    - `home_win` is True if the home score is greater than the away score at the end of the game
      - slight home-field advantage noted, see [report](./report.pdf)
 	 - ties should not occur by game design, but two existed in the dataset. they were treated as losses: `home_win=False`
  - tested a wide variety of classifcation models, **progressed kNN, SGD, and ExtraTrees classifiers** for hyperparameter tuning and final comparison
-   - determined feature selection (`SelectKBest`) and normalization conditions for linear and kNN models
-   - did not employ feature selection for ensemble model
+   - determined best feature selection (`SelectKBest`) and normalization conditions for each model
+     - conditions listed with tuned hyperparameters for [top 3 models](/Capstone%20Two/graphs/Model/classification/top_3_estimator_parameters.png)
    - training and testing scores similar for all models, SGD may be [overfitting slightly](/Capstone%20Two/graphs/Model/classification/selection/overfitting_check.png)
  - kNN better recall, but worse precision than ExtraTrees and SGD classifiers. kNN higher in aggregate scores: F1, Balanaced Accuracy, ROC-AUC
    - in more words, kNN better at home wins correctly but worse at predicting home losses
@@ -188,11 +189,11 @@
 | Model | precision | recall | F1 | Balanced Accuracy | ROC-AUC |
 |-------|-----------|--------|----|-------------------|---------|
 |KNeighborsClassifier|	0.949|	**0.943**|	**0.946**|	0.937	|0.937|
-|kNN+Cat+ET|	0.954	|0.938	|**0.946**	|**0.938**|	**0.938**|
+|kNN+Cat+ET|	0.954	|0.938	|**0.946**	|**0.938**| 0.938|
 |ExtraTreesClassifier|	0.953|	0.926|	0.939|	0.932|	0.932|
 |SGDClassifier	|0.953|	0.926	|0.939	|0.932	|0.932|
 |kNN+Cat|	**0.959**|	0.920|	0.939	|0.933	|0.933|
-|CatBoostClassifier|	0.948|	0.926	|0.937|	0.928|	0.972|
+|CatBoostClassifier|	0.948|	0.926	|0.937|	0.928|	**0.972** |
 |kNN+Cat+SGD	|0.948	|0.926	|0.937	|0.928	|0.928|
 
 
@@ -207,7 +208,9 @@
 ![classification_top_2](/Capstone%20Two/graphs/Model/classification/PR-curve.png "Precision-Recall curve") 
 ![classification_top_3](/Capstone%20Two/graphs/Model/classification/DET-curve.png "DET curve") 
 ![classification_top_4](/Capstone%20Two/graphs/Model/classification/Calibration-curve.png "Reliability diagrams for ET, kNN") 
-<br>*tuned model parameters*
+
+*tuned model hyperparameters, note model-specific normalization and feature selection*
+
 ![classification_top_5](/Capstone%20Two/graphs/Model/classification/top_3_estimator_parameters.png "tuned model hyperparameters") 
 
 [see more: confusion matrices, etc. . . ](/Capstone%20Two/graphs/Model/classification/)
