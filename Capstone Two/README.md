@@ -100,6 +100,22 @@
 
 </details>
 
+<details><summary>Feature Engineering graphs</summary>
+
+*completion rate example, see also: `[block turnover](/Capstone%20Two/graphs/EDA/turnover_rates.png) [difference](/Capstone%20Two/graphs/EDA/block_turnover_diff-vs-margin.png)`*
+
+`completion rate = completions / throws` | `completion rate difference` = `home completion rate` - `away completion rate`
+
+<br>**Completion Rate Distributions**<br>
+![Completion Rate Difference](/Capstone%20Two/graphs/EDA/distributions_2.png "completion rate difference more normally distributed than either rate itself") 
+<br>**Away vs Home completion rate, colored by Home Margin**<br>
+![Distribution, Win](/Capstone%20Two/graphs/EDA/comp_rate_study.png "completion rates trend slightly with margin") 
+<br>**Completion Rate Difference vs Home Margin**<br>
+![Correlation](/Capstone%20Two/graphs/EDA/comp_rate_diff-vs-margin.png "completion rate difference more clearly defined relationship with margin") 
+
+
+</details>
+
 **Modeling**
  - separate studies for each target, separated into two notebooks
  - PyCaret used to streamline initial studies, scikit-learn + manual loops were then used to evaluate and train final models
