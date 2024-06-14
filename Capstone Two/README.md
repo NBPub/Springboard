@@ -6,7 +6,7 @@
  - [Python Environment](#python-environment--310-311)
  - [Project Overview](#Overview)
 
-### Submissions
+## Submissions
 
  1. [Project Proposal](./7.1_Project%20Propsal.pdf)
  2. [Data Wrangling Notebook](./7.6_Wrangling.ipynb)
@@ -20,7 +20,7 @@
    
 **| [Data Folder](.data/) | [Graphs Folder](./graphs/) |**
 
-### Python Environment | 3.10, 3.11
+## Python Environment | 3.10, 3.11
 
 <details><summary>show</summary>
 
@@ -46,20 +46,29 @@
 
  
    
-### Overview
+## Overview
 
-**Background, Problem Statement**
+ 1. [Background, Problem Statement](#background,-problem-statement)
+ 2. [Data Collection](#data-collection)
+ 3. [Data Cleaning](#data-cleaning)
+ 4. [EDA and Feature selection, engineering](#features)
+ 5. [Modeling](#modeling)
+ 6. [Future Work](#future-work)
+ 7. [Win Classification](#win-classification) *alternate problem statement*
+
+### Background, Problem Statement
  - American Ultimate Disc League (AUDL) is a men’s professional Ultimate Frisbee league established 2013 in North America, currently consisting of 24 teams across four regional divisions
- - use the most basic game summary statistics to predict the outcome of the game: the winning team and the difference in the two teams’ scores
+ - use the most basic game summary statistics to predict the outcome of the game: **the winning team and the difference in the two teams’ scores**
    - final models should provide a basis for understanding the remaining summary statistics
    - data pipeline should exemplify collecting, cleaning, and exploring AUDL data for future studies.
+   - this page focuses on regression for `home_margin`, see [win classification]() work below
    
-**Data Collection**
+### Data Collection
  - data collected via AUDL API [docs](https://www.docs.audlstats.com/)
    - official endpoint for game lists, [all games 2011-2023](https://www.backend.audlstats.com/api/v1/games?date=2011:2023)
    - unofficial endpoint for game summaries, [example game](https://www.backend.audlstats.com/web-api/game-stats?gameID=2023-05-19-LA-SLC)
    
-**Data Cleaning**
+### Data Cleaning
  - some 0 values are real, some indicate missing data 
  - newer statistics (redzone, hucks) not recorded until midway through 2021
  - see [report](./report.pdf) appendix for detailed data checks
@@ -74,9 +83,9 @@
 
 </details>
  
-**Features**
+### Features
  - only basic stats used for modeling: **throws, completions, blocks, turnovers**
- - used to engineer additional Features
+ - these were used to engineer additional features
    - **completion rate, completion rate difference, block-turnover difference**
  - target features used the final score for definition
    - **home margin** = `home_score - away_score`
@@ -91,6 +100,7 @@
 <br>**Feature+Target Correlations**<br>
 ![Correlation](/Capstone%20Two/graphs/EDA/corr_heatmap.png "Correlation Heat Map") 
 
+**Automated Outlier Detection**<br>
 *see more thresholds and outlier detection based on PCA components in [folder](/Capstone%20Two/graphs/Outlier%20Detection)*
 
 <br>**Isolation Forest**<br>
@@ -124,7 +134,7 @@
 
 </details>
 
-**Modeling**
+### Modeling
  - separate studies for each target, separated into two notebooks
  - PyCaret used to streamline initial studies, scikit-learn + manual loops were then used to evaluate and train final models
    - final hyperparameter tuning with RandomizedSearch, [help with distributions](https://nbpub.pythonanywhere.com/)
@@ -148,13 +158,59 @@
 </details>
 
 
-**Future Work**
+### Future Work
  - repeat efforts with team and matchup specific models
    - predict current model's inputs --> predict winning team and score difference?
  - data expansion: game events + player data + position data 
    - established detailed game record collection + persistence
    - frame many other studies from this collection
  
+ 
+## Win Classification 
 
+*see [Classification Notebook](./18.3_Modeling_Classification.ipynb) for details*
+
+ - same process for data preparation as used for `home_margin` regression, different target variable: `home_win`
+   - `home_win` is True if the home score is greater than the away score at the end of the game
+     - slight home-field advantage noted, see [report](./report.pdf)
+	 - ties should not occur by game design, and two existed in the dataset. they were treated as losses: `home_win=False`
+ - tested a wide variety of classifcation models, **progressed kNN, SGD, and ExtraTrees classifiers** for hyperparameter tuning and final comparison
+   - determined feature selection (`SelectKBest`) and normalization conditions for linear and kNN models
+   - did not employ feature selection for ensemble model
+   - training and testing scores similar for all models, SGD may be [overfitting slightly](/Capstone%20Two/graphs/Model/classification/overfitting_check.png)
+ - kNN better recall, but worse precision than ExtraTrees and SGD classifiers. kNN higher in aggregate scores: F1, Balanaced Accuracy, ROC-AUC
+   - in more words, kNN better at home wins correctly but worse at predicting home losses
+ - Voting/Stacking used to blend final three models (tuned) and CatBoost classifier (untuned)
+   - kNN + CatBoost + ExtraTrees blend (`VotingClassifier`) may provide improvement over kNN or ExtraTrees alone
+   
+   
+| Model | precision | recall | F1 | Balanced Accuracy | ROC-AUC |
+|-------|-----------|--------|----|-------------------|---------|
+|KNeighborsClassifier|	0.949|	0.943|	0.946|	0.937	|0.937|
+|kNN+Cat+ET|	0.954	|0.938	|0.946	|0.938|	0.938|
+|ExtraTreesClassifier|	0.953|	0.926|	0.939|	0.932|	0.932|
+|SGDClassifier	|0.953|	0.926	|0.939	|0.932	|0.932|
+|kNN+Cat|	0.959|	0.920|	0.939	|0.933	|0.933|
+|CatBoostClassifier|	0.948|	0.926	|0.937|	0.928|	0.972|
+|kNN+Cat+SGD	|0.948	|0.926	|0.937	|0.928	|0.928|
+
+
+<details><summary>Classification graphs</summary>
+
+<br>**Model Selection 1**<br>
+![classification_selection_1](/Capstone%20Two/graphs/Model/classification/F1-vs-ROCAUC.png "Model selection: F1 vs ROC-AUC") 
+<br>**Model Selection 2**<br>
+![classification_selection_2](/Capstone%20Two/graphs/Model/classification/recall-vs-precision.png "Model selection: Recall vs Precision") 
+<br>**Top 3 classification models: SGD, kNN, ExtraTrees**<br>
+![classification_top_1](/Capstone%20Two/graphs/Model/classification/ROC-curve.png "") 
+![classification_top_2](/Capstone%20Two/graphs/Model/classification/PR-curve.png "") 
+![classification_top_3](/Capstone%20Two/graphs/Model/classification/DET-curve.png "") 
+![classification_top_4](/Capstone%20Two/graphs/Model/classification/Calibration-curve.png "") 
+<br>
+![classification_top_5](/Capstone%20Two/graphs/Model/classification/top_3_estimator_parameters.png "") 
+
+[see more](/Capstone%20Two/graphs/Model/classification/)
+
+</details>
 
 
