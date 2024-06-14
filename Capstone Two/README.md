@@ -115,11 +115,11 @@
 <br>**Completion Rate Difference vs Home Margin**<br>
 ![Correlation](/Capstone%20Two/graphs/EDA/feature%20engineering/comp_rate_diff-vs-margin.png "completion rate difference more clearly defined relationship with margin") 
 
-*see also: `block turnover difference*
+*see also: `block turnover difference`*
  - [distributions](/Capstone%20Two/graphs/EDA/feature%20engineering/distributions_1.png)
    - home/away blocks are added to away/home turnovers to get a total for a given team (`block turnover`'s), rates are the total / number of points played.
- - [individual vs margin](/Capstone%20Two/graphs/EDA/feature%20engineering/turnover_rates.png)
- - [difference vs margin](/Capstone%20Two/graphs/EDA/feature%20engineering/block_turnover_diff-vs-margin.png)
+ - [individual vs margin](/Capstone%20Two/graphs/EDA/feature%20engineering/turnover_rates.png), [difference vs margin](/Capstone%20Two/graphs/EDA/feature%20engineering/block_turnover_diff-vs-margin.png)
+   - as shown above, the difference between the two teams correlates more strongly to `home margin` than either itself
 
 
 </details>
