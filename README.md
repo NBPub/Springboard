@@ -67,15 +67,15 @@
 
  - Notes, *in progress* 
    - Statistics
-     - [**Stat Book**](/Notes/Statistics%20Book/)
+     - [**Stat Book**](/Notes/Statistics%20Book#contents/)
 	   - Chapter summaries, mostly incomplete
 	 - [**LI Learning**](/Notes/LI%20Learning/)
 	   - statistical inference, statistical modeling, bayesian inference
    - [**Review Topics for Interviews**](/Notes/Interview%20Review/)
      - Python basics, SQL, various interview articles
-   - [**Machine Learning Units**](/Notes/Machine%20Learning#machine-learning-notes)
+   - [**Machine Learning Units**](/Notes/Machine%20Learning#machine-learning-notes/)
      - supervised and unsupervised learning, feature engineering, applications
-   - [**datacamp notebooks**](/Notes/datacamp%20notebooks#notes)
+   - [**datacamp notebooks**](/Notes/datacamp%20notebooks#notes/)
      - supervised and unsupervised learning, feature engineering, time-series analysis, PySpark
 	 - brief list of completed courses
  - External

@@ -31,10 +31,6 @@
  - Descision Trees
  - Random Forest
  - Gradient Boosting
-<br>
- - Other
-   - Guided Capstone Notes
-     - cross-validation, metrics, others?
 	 
 
 #### Imbalanced Data | [link](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
@@ -71,12 +67,12 @@ Artificially change dataset to impart more balance on the model, either:
    - Test different resampled ratios (don't only try 1:1 for binary problem)
 
   4. Generate Synthetic Samples, **SMOTE**
-Randomly sample attributes from instances in the minority class to generate synthetic samples.
   - can sample empirically
   - utilize Naive Bayes
   - various systematic algorithms . . .
     - **SMOTE**, synthetic minority over-sampling technique
-	- [original 2002 publication](https://arxiv.org/pdf/1106.1813.pdf)
+	  - [original 2002 publication](https://arxiv.org/pdf/1106.1813.pdf)
+	  - Randomly sample attributes from instances in the minority class to generate synthetic samples.
 	- see *scikit-learn-contrib* package, [imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
 
   5. Change algorithm
@@ -96,6 +92,8 @@ Break down problem into more tractable, smaller problems. Get inspiration from o
 </details> 
  
 ### kNN | [Harvard CS109 lecture 09](https://youtu.be/uhHqzqj5Pio?t=495)
+
+<details><summary>. . . click to expand . . .</summary>
 
 **Basic Idea**
 
@@ -127,7 +125,9 @@ For example, smaller datasets can't fold as much. Make sure test-data is untouch
 Feature additions may help training accuracy, but then encounter [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality), 
 the space is now too far and neighbors are far apart. Therefore . . .
 
-**Dimensionality Reduction**
+</details> 
+
+### Dimensionality Reduction
 
 **Idea:** Bring down dimensionality of vectors generated from pixels while preserving the distance between neighbors.
 *watch this part again as a review [timestamp](https://youtu.be/uhHqzqj5Pio?t=3814)
@@ -140,7 +140,10 @@ Also useful for compression and visualization (PCA music example).
   
 **PCA** | [previous notes](https://github.com/NBPub/DataScienceGuidedCapstone#principal-component-analysis-1)
   
-Post-Office Handwriting Recognition Example
+ - Post-Office Handwriting Recognition Example
+ - Acoustic patterns in music: *project to expand on my library, explore particular genre grouping*
+
+
 
 **Multi-Dimensional Scaling (MDS)** | [wiki](https://en.wikipedia.org/wiki/Multidimensional_scaling) | [other](https://dept.stat.lsa.umich.edu/~jerrick/courses/stat701/notes/mds.html#:~:text=Multidimensional%20Scaling%20(MDS)%20is%20a,to%20find%20patterns%20or%20groupings.)
 
@@ -167,14 +170,5 @@ Post-Office Handwriting Recognition Example
 #### Ridge
 
 #### Lasso
-
-
-	 
-### Ideas for Capstone Two
-
- - win model / probability
-   - Naive Bayes vs Logistic Regression *maybe* vs Decision Tree
-   
-*Other, PCA example with acoustic patterns in music*: project to expand on my library, explore particular genre grouping
 
 

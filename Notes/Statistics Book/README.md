@@ -1,6 +1,37 @@
 # Contents
 
-... links ...
+ - [Ch 1,2](#chapters-12)
+   - categorical data and percentages
+   - summarizing and communicating numbers
+ - [Ch 3](#chapter-3), [Ch 4](#chapter-4),  [Ch 5](#chapter-5)
+   - populations and measurement, what causes what?, modeling with regression
+ - [Ch 6](#chapter-6) | **Algorithms, Analytics, and Prediction**
+  - [titanic example](#titanic-example)
+  - [overfitting](#over-fitting)
+  - [regression  models](#regression-models)
+  - [other techniques](#other-techniques)
+    - Random Forests, SVM, Neural Networks, Nearest Neighbors
+  - [challenges](#challenges)
+    - four main concerns
+  - [artificial intelligence](#artificial-intelligence)
+    - narrow vs general
+ - [Ch 7](#chapter-7)
+   - estimates and intervals
+ - [Ch 8,9](#chapter-89)
+   - Probability, together with Statistics
+ - [Ch 10](#chapter-10)
+   - answering questions and claiming discoveries
+ - [Ch 11](#chapter-11)
+   - Bayesian inference, statistics
+   - [R van de Schoot](https://osf.io/wdtmc/download)
+ - [Ch 12,13, 14](#chapter-121314)
+   - how things go wrong, what we can do better
+   - conclusion
+   
+**The Art of Statistics and Learning from Data** - *David Spiegelhalter*
+<br> ISBN: `978-0-241-25875-0`
+
+*chapter takewaway notes stored locally*
 
 ## Chapters 1,2
 
@@ -68,17 +99,17 @@
 Brief model descriptions, see wikipedia and scikit-learn links for more.
 
  - [Random Forests](https://en.wikipedia.org/wiki/Random_forest#See_also) | [docs](https://scikit-learn.org/stable/modules/ensemble.html#random-forests)
-  - large number of trees with classifications, majority "vote" for final decision *[bagging](https://en.wikipedia.org/wiki/Bootstrap_aggregating)*
+   - large number of trees with classifications, majority "vote" for final decision *[bagging](https://en.wikipedia.org/wiki/Bootstrap_aggregating)*
  - [Suport Vector Machines](https://en.wikipedia.org/wiki/Support_vector_machine) | [docs](https://scikit-learn.org/stable/modules/svm.html#support-vector-machines)
-  - linear combinations of features that split different outcomes
+   - linear combinations of features that split different outcomes
  - [Neural Networks](https://en.wikipedia.org/wiki/Artificial_neural_network) | [docs](https://scikit-learn.org/stable/modules/neural_networks_supervised.html#neural-networks-supervised), [unsupervised](https://scikit-learn.org/stable/modules/neural_networks_unsupervised.html#neural-networks-unsupervised)
-  - layers of nodes, depending on previous layers by optimized weights
-    - > series of logistic regressions piled on top of each other . . . weights are learned. . . like random forests
-  - many-layered models are "deep-learning"
+   - layers of nodes, depending on previous layers by optimized weights
+     - > series of logistic regressions piled on top of each other . . . weights are learned. . . like random forests
+   - many-layered models are "deep-learning"
  - [K-nearest-neighbor](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) | [docs](https://scikit-learn.org/stable/modules/neighbors.html)
-  - classifies according to majority outcome among close cases 
+   - classifies according to majority outcome among close cases 
   
-Applying to Titanic . . .
+***Applying to Titanic . . .***
 
  - model accuracy not good measure of performance
    - recall over-fit model had similar accuracy score (81%) to "properly fit" model, but higher MSE
@@ -111,3 +142,11 @@ Four main concerns
  - narrow vs general
 
 ## Chapter 7
+
+## Chapter 8,9
+
+## Chapter 10
+
+## Chapter 11
+
+## Chapter 12,13,14

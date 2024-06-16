@@ -9,7 +9,7 @@
  - [15 Unsupervised Learning](./15_Unsupervised_Learning.md)
  - [16 Feature Engineering](./16_Feature_Engineering.md)
  - [18 Applications](./18_Applications.md)
- - 25 "Big Data", Data Science at Scale *external links to courses*
+ - 25 "Big Data", Data Science at Scale | *external links to courses*
    - [Hadoop](https://www.linkedin.com/learning/learning-hadoop-23008320/what-and-why-hadoop)
    - [PySpark](https://app.datacamp.com/learn/courses/big-data-fundamentals-with-pyspark)
 
