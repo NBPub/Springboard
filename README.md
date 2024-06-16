@@ -73,12 +73,13 @@
 	   - statistical inference, statistical modeling, bayesian inference
    - [**Review Topics for Interviews**](/Notes/Interview%20Review/)
      - Python basics, SQL, various interview articles
-   - [**Machine Learning Units**](/Notes/Machine%20Learning/)
+   - [**Machine Learning Units**](/Notes/Machine%20Learning#machine-learning-notes)
      - supervised and unsupervised learning, feature engineering, applications
-   - [**datacamp notebooks**](/Notes/datacamp%20notebooks/)
+   - [**datacamp notebooks**](/Notes/datacamp%20notebooks#notes)
      - supervised and unsupervised learning, feature engineering, time-series analysis, PySpark
+	 - brief list of completed courses
  - External
    - [**Python Data Science repository**](https://github.com/jakevdp/PythonDataScienceHandbook) *Jake VanderPlas*
      - [website form of book](https://jakevdp.github.io/PythonDataScienceHandbook/)
    - [**Notes from Guided Capstone**](https://github.com/NBPub/DataScienceGuidedCapstone#useful-tidbits)
-   - [StatQuest YT channel](https://www.youtube.com/@statquest)
+   - [**StatQuest YT channel**](https://www.youtube.com/@statquest)

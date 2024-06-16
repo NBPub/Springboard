@@ -1,10 +1,29 @@
- - Python Basics
+ - Python
    - [itertools](https://pymotw.com/3/itertools/)
    - [collections](https://pymotw.com/3/collections/)
      - extended data types, like *defaultdict* or *OrderedDict*
+   - [Review of Common Algorithms, KhanAcademy](https://www.khanacademy.org/computing/computer-science/algorithms)
+   - [Basic Data Structures](https://runestone.academy/ns/books/published/pythonds3/index.html)
+     - ***Problem Solving with Algorithms & Data Structures Using Python**, *Miller, Ranum, Yasinovskyy*
+     - [accompanying YT channel](https://www.youtube.com/user/gjenkinslbcc)
+	 - [exercises](https://runestone.academy/user/login?_next=/assignments/chooseAssignment)
  - SQL
    - [postgresql Window Functions](https://www.postgresql.org/docs/current/functions-window.html)
+   - see datacamp stuff, [my own work](https://github.com/NBPub/BeatLog)
  - Articles
-   - []()
+   - **Information Interviews**
+     - [Steve Dalton Interview](https://youtu.be/8FsUm5noXEM?si=E1Xm611ZKCoVdO3z)
+	 - other videos
+     - [Questions to Ask](https://www.themuse.com/advice/informational-interview-best-questions-to-ask)
+   - **Behavioral**
+     - ["STAR" technique](https://www.thebalancemoney.com/what-is-the-star-interview-response-technique-2061629)
+	   - situation, task, action, result
+	 - [Crafting Perfect Answers](https://web.archive.org/web/20191026043444/https://www.iwillteachyoutoberich.com/blog/how-to-craft-perfect-answers-to-any-interview-question/)
+	 - [Questions you don't know answer to](https://www.themuse.com/advice/4-ways-to-handle-interview-questions-you-dont-know-how-to-answer)
+   - **Technical**
+     - [KDnuggests example questions and answers](https://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers.html)   
+	   - internal resource a little cleaner to read, more comprehensive
+	 - [Review of Common Algorithms, KhanAcademy](https://www.khanacademy.org/computing/computer-science/algorithms)
  - *springboard resources stored locally*
+ - *did not include resume and related resources*
  
