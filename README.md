@@ -65,8 +65,20 @@
 
 ## Other
 
- - [**Python Data Science Notebook**](https://github.com/jakevdp/PythonDataScienceHandbook)
- - [**Guided Capstone**](https://github.com/NBPub/DataScienceGuidedCapstone#useful-tidbits)
- - [**Stat Book**](/10.1%20StatBookNotes)
-   - [**LI Learning**](/10.1%20StatBookNotes/LI_Learning_notes.md)
- - [**Macine Learning Notes**](/ML_Notes)
+ - Notes, *in progress* 
+   - Statistics
+     - [**Stat Book**](/Notes/Statistics%20Book/)
+	   - Chapter summaries, mostly incomplete
+	 - [**LI Learning**](/Notes/LI%20Learning/)
+	   - statistical inference, statistical modeling, bayesian inference
+   - [**Review Topics for Interviews**](/Notes/Interview%20Review/)
+     - Python basics, SQL, various interview articles
+   - [**Machine Learning Units**](/Notes/Machine%20Learning/)
+     - supervised and unsupervised learning, feature engineering, applications
+   - [**datacamp notebooks**](/Notes/datacamp%20notebooks/)
+     - supervised and unsupervised learning, feature engineering, time-series analysis, PySpark
+ - External
+   - [**Python Data Science repository**](https://github.com/jakevdp/PythonDataScienceHandbook) *Jake VanderPlas*
+     - [website form of book](https://jakevdp.github.io/PythonDataScienceHandbook/)
+   - [**Notes from Guided Capstone**](https://github.com/NBPub/DataScienceGuidedCapstone#useful-tidbits)
+   - [StatQuest YT channel](https://www.youtube.com/@statquest)
