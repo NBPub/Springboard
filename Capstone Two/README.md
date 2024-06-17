@@ -1,5 +1,9 @@
 # Capstone Two - AUDL Win Model(s)
 
+**Predict game score margin from basic summary statistics**
+
+![Overview](/Capstone%20Two/cover_image.png "Project schematic for home_margin regression") 
+
 ## Contents
 
  - [Submissions](#Submissions)

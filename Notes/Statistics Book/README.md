@@ -31,7 +31,6 @@
 **The Art of Statistics and Learning from Data** - *David Spiegelhalter*
 <br> ISBN: `978-0-241-25875-0`
 
-*chapter takewaway notes stored locally*
 
 ## Chapters 1,2
 

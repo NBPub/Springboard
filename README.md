@@ -3,7 +3,7 @@
 *Submissions for **COMPLETED ✔️** Springboard Data Science curriculum.*
 
  - [Submissions](#Submissions)
-   - *[Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone) (external repo)*
+   - *[Guided Capstone](https://github.com/NBPub/DataScienceGuidedCapstone#submissions) (external repo)*
  - [Capstone Two](#Capstone-Two)
    - [Project Page](/Capstone%20Two#capstone-two---audl-win-models)
  - [Capstone Three](#Capstone-Three)

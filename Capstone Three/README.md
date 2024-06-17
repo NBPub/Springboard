@@ -2,6 +2,8 @@
 
 **Predict 6 plant traits from plant images and ancillary geodata in an effort to measure ecoysystem health**
 
+![Overview](./cover_image.png "Project schematic for Plant Traits regression") 
+
 ## Contents
 
  - [Submissions](#Submissions)
